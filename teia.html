@@ -9,15 +9,16 @@
     <link rel="stylesheet" href='styleeita.css'>
     <style>
 
+
         header > h1 {
             
             color:rgb(66, 66, 66);
         }
-        h2 {
+        /*h2 {
             padding-top: 90px;
             padding-bottom: 50px;
             color:rgb(66, 66, 66);
-        }
+        }*/
         .direita   {
             float: right;
             margin-left:10px;
@@ -29,53 +30,106 @@
             margin-right: 10px;
             margin-top:0px;
         }
-    </style>
+
+.nav ul {
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #204c6d;
+}
+
+.nav li {
+  float: left;
+  margin:0px;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(32, 40, 67);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #93b4f0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #5776d4;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
 </head>
 <body>
+<header>
+  <h1>EITA</h1>
+  <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3>
+  <hr>
 
-    <header>
-        <h1>EITA</h1>
-        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3>
-        <hr>
-        <nav class="dropdownmenu">
-          <ul>
-            <li><a href="downloads.html" target="_self">Downloads</a></li>
-            <li><a href="#" target="_self">Galeria</a>
-              <ul id="submenu">
-                  <li><a href="galeriafarmacia.html" target="_self">Farmácia Viva</a></li>
-                  <li><a href="galeriatrilhas.html" target="_self">Trilhas</a></li>
-                  <li><a href="galeriahorta.html" target="_self">Horta do saber</a></li> 
-              </ul>
-            </li>
-            <li><a href="#" target="_self">Atuação</a>
-            <ul id="submenu">
-              <li><a href="alfaiataria.html" target="_self">Alfaiataria Social</a></li>
-              <li><a href="alquimia.html" target="_self">Alquimia Social</a></li>
-              <li><a href="farmacia.html" target="_self">Farmácia Viva</a></li>
-              <li><a href="horta.html">Hortas Didáticas</a></li>
-              <li><a href="nascentes.html" target="_self">Nascentes</a></li>
-              <li><a href="territorios.html" target="_self">Territórios</a></li>
-              <li><a href="trilhas.html" target="_self">Trilhas</a></li>
-              <li><a href="viveiros.html" target="_self">Viveiros</a></li>
-            </ul>
-            </li>
-            <li><a href="sede.html" target="_self">Nossa sede</a></li>
-            <li><a href="#" target="_self">Quem somos</a>
-              <ul id="submenu">
-                  <li><a href="lauriston.html" target="_self">Lauriston Trindade</a></li>
-                  <li><a href="anderson.html" target="_self">Anderson Valentim</a></li>
-                  <li><a href="bruno.html" target="_self">Bruno Braga</a></li>
-                  <li><a href="cicera.html" target="_self">Cícera Tavares</a></li>
-                  <li><a href="eduardo.html" target="_self">Eduardo Barreto</a></li>
-                  <li><a href="maria.html" target="_self">Maria Trindade</a></li>
-                  <li><a href="messias.html" target="_self">Messias Neto</a></li>
-                  <li><a href="rafayella.html" target="_self">Rafayella Travassos</a></li>
-            </ul>
-                  </li>
-            <li><a href="index.html" target="_self">Início</a></li>
-          </ul>
-        </nav>
-        
+<nav>
+<div class="nav">
+<ul>
+  <li><a href="#home">Início</a></li>
+
+  <li class="dropdown">
+    <a href="#atuacao" class="dropbtn">Atuação</a>
+    <div class="dropdown-content">
+      <a href="#">Alfaiataria Social</a>
+      <a href="#">Farmácia viva</a>
+      <a href="#">Hortas didáticas</a>
+      <a href="#">Nascentes</a>
+      <a href="#">Trilhas</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Galeria</a>
+    <div class="dropdown-content">
+      <a href="#">Farmácia viva</a>
+      <a href="#">Hortas</a>
+      <a href="#">Trinhas</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sobre</a>
+    <div class="dropdown-content">
+      <a href="#">Nossa equipe</a>
+      <a href="#">Espaço Físico</a>
+      <a href="#">Espaço conceitual</a>
+    </div>
+  </li>
+
+  <li style="float:right"><a href="#home">Contatos</a></li>
+        </ul>
+
+</div>
+</nav>    
     </header>
     <main>
   
@@ -96,16 +150,19 @@
         <p>O desenvolvimento da estrutura do que chamamos TEIA, é fundamental para nossa autogestão e será base para o desdobramento indicadores, agandas e regimentos.</p>
         
         <hr>
+
     <h2>Objetivos Gerais</h2>
    
     <p>
-            <ul>
+      <div class="menu">
+            <ul class="lista">
                 <li>Integrar projetos e ações;</li>
                 <li>Oferecer à EITA uma visão sistêmica dos processos, internos, locais e periféricos;</li>
                 <li>Oferecer autorregulação de processos e projetos.</li>
                 <li>Garantir que os projetos surjam em sinergia com as dimensões e diretrizes da EITA.
                 </li>
-            </ul><br>
+            </ul>
+          </div><br>
             
     </p>
     <hr>
@@ -128,15 +185,18 @@
   <p>Podemos considerar que, com a rápida aceleração da obtenção de informação, as relações sociais baseadas no conhecimento sofreram intensas forças de transformação, chegando ao cúmulo de sugerir que processos de apreensão de conhecimentos beirasse o instantâneo.</p>
   <p>Edgar Morin (2011), em 1999, definiu as lacunas na Educação e as chamos de <cite>"buracos"</cite>. E na sequência, enunciou <em>"sete saberes"</em>  necessários para a educação do futuro.</p><br>
   <p>Os <em>"sete saberes"</em> ficaram assim definidos:</p><br>
-      <ol type="I">
-        <li><e>As cegueiras do conhecimento: o erro e a ilusão;</e></li>
-        <li><e>Os princípios do conhecimento pertinente;</e></li>
-        <li><e>Ensinar a condição humana;</e></li>
-        <li><e>Ensinar a identidade terrena;</e></li>
-        <li><e>Enfrentar as incertezas;</e></li>
-        <li><e>Ensinar a compreensão;</e></li>
-        <li><e>A ética do gênero humano.</e></li>
-    </ol><br>
+  
+      <div class="menu">
+        <ol type="I">
+          <li><e>As cegueiras do conhecimento: o erro e a ilusão;</e></li>
+          <li><e>Os princípios do conhecimento pertinente;</e></li>
+          <li><e>Ensinar a condição humana;</e></li>
+          <li><e>Ensinar a identidade terrena;</e></li>
+          <li><e>Enfrentar as incertezas;</e></li>
+          <li><e>Ensinar a compreensão;</e></li>
+          <li><e>A ética do gênero humano.</e></li>
+            </ol>
+      </div><br>
     <div class="esquerda">
       <img src="imagens/aprendendo.png" alt="prisma e sete cores"></div> 
   <p><strong><em>O primeiro saber:</em></strong>
