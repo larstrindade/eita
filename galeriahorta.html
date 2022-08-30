@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Viva</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='styleeita.css'>
+
+    <style>
+ 
+        body {
+            background-color: white;
+        }
+        header > h1 {
+            
+            color:#500c71;
+        }
+        h2 {
+            padding-top: 90px;
+            padding-bottom: 50px;
+            color:#500c71;
+        }
+        .direita   {
+            float: right;
+            margin-left:10px;
+            margin-top: 0px;
+                   
+        }
+        .esquerda {
+            float:left;
+            margin-right: 10px;
+            margin-top:0px;
+        }
+
+       
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-galeria{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-auto-rows: 300px;
+    padding: 5px;
+    grid-gap: 5px;
+}
+
+.item-galeria{
+    position: relative;
+}
+
+.item-galeria .img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.item-galeria .title-galeria{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.558);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'caviar';
+}
+
+
+.h-1{
+    grid-row: span 1;
+}
+
+.h-2{
+    grid-row: span 2;
+}
+
+.w-1{
+    grid-column: span 1;
+}
+
+.w-2{
+    grid-column: span 2;
+}
+
+
+@media(max-width:768px){
+    .container-galeria{
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: 50vh;
+    }
+
+    .h-2{
+        grid-row: span 1;
+    }
+    
+    .w-2{
+        grid-column: span 1;
+    }
+}
+  
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EITA</h1>
+        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3>
+        <hr>
+        <nav class="dropdownmenu">
+            <ul>
+              <li><a href="downloads.html" target="_self">Downloads</a></li>
+              <li><a href="#" target="_self">Galeria</a>
+                <ul id="submenu">
+                    <li><a href="galeriafarmacia.html" target="_self">Farmácia Viva</a></li>
+                    <li><a href="galeriatrilhas.html" target="_self">Trilhas</a></li>
+                    <li><a href="galeriahorta.html" target="_self">Horta do saber</a></li> 
+                </ul>
+              </li>
+              <li><a href="#" target="_self">Atuação</a>
+              <ul id="submenu">
+                <li><a href="alfaiataria.html" target="_self">Alfaiataria Social</a></li>
+                <li><a href="alquimia.html" target="_self">Alquimia Social</a></li>
+                <li><a href="farmacia.html" target="_self">Farmácia Viva</a></li>
+                <li><a href="horta.html">Hortas Didáticas</a></li>
+                <li><a href="nascentes.html" target="_self">Nascentes</a></li>
+                <li><a href="territorios.html" target="_self">Territórios</a></li>
+                <li><a href="trilhas.html" target="_self">Trilhas</a></li>
+                <li><a href="viveiros.html" target="_self">Viveiros</a></li>
+              </ul>
+              </li>
+              <li><a href="sede.html" target="_self">Nossa sede</a></li>
+              <li><a href="#" target="_self">Quem somos</a>
+                <ul id="submenu">
+                    <li><a href="lauriston.html" target="_self">Lauriston Trindade</a></li>
+                    <li><a href="anderson.html" target="_self">Anderson Valentim</a></li>
+                    <li><a href="bruno.html" target="_self">Bruno Braga</a></li>
+                    <li><a href="cicera.html" target="_self">Cícera Tavares</a></li>
+                    <li><a href="eduardo.html" target="_self">Eduardo Barreto</a></li>
+                    <li><a href="maria.html" target="_self">Maria Trindade</a></li>
+                    <li><a href="messias.html" target="_self">Messias Neto</a></li>
+                    <li><a href="rafayella.html" target="_self">Rafayella Travassos</a></li>
+              </ul>
+                    </li>
+              <li><a href="index.html" target="_self">Início</a></li>
+            </ul>
+          </nav>
+        
+    </header>
+    <main>
+  
+
+    
+        <h2>Hortas</h2>
+        <div class="container-galeria">
+          <div class="item-galeria w-2 h-2">
+              <img src="imagens/horta/horta5.png" alt="" class="img-galeria">
+              <span class="title-galeria">
+                  Artesanias
+              </span>
+          </div>
+          <div class="item-galeria w-2 h-1">
+              <img src="imagens/horta/horta1.png" alt="" class="img-galeria">
+              <span class="title-galeria">
+                  Light Paint
+              </span>
+          </div>
+          <div class="item-galeria w-2 h-1">
+              <img src="imagens//horta/horta3.png" alt="" class="img-galeria">
+              <span class="title-galeria">
+                  Prática de desenho
+              </span>
+          </div>
+          <div class="item-galeria w-2 h-1">
+              <img src="imagens/horta/horta8.png" alt="" class="img-galeria">
+              <span class="title-galeria">
+                  Inclusão
+              </span>
+          </div>
+          <div class="item-galeria w-2 h-2">
+              <img src="./imagens/horta/horta12.png" alt="" class="img-galeria">
+              <span class="title-galeria">
+                  Interatividade
+              </span>
+          </div>
+          <div class="item-galeria w-2 h-1">
+            <img src="./imagens/horta/horta2.png" alt="" class="img-galeria">
+            <span class="title-galeria">
+                Teoria em sala de aula
+            </span>
+        </div>
+          <div class="item-galeria w-2 h-2">
+              <img src="imagens/horta/horta14.png" alt="" class="img-galeria">
+              <span class="title-galeria">
+                  Composteira artesanal
+              </span>
+          </div>
+         
+          <div class="item-galeria w-2 h-1">
+              <img src="imagens/horta/horta11.png" alt="" class="img-galeria">
+              <span class="title-galeria">
+                  Prática de laboratório
+              </span>
+          </div>
+          <div class="item-galeria w-2 h-1">
+            <img src="imagens/horta/horta4.png" alt="" class="img-galeria">
+            <span class="title-galeria">
+                Práticas de irrigação
+            </span>
+        </div>
+      </div>
+      <section>
+        <h4>Parceiros:</h4><br>
+        <div class="row">
+           
+           
+            <div class="coluna">
+                <img src="imagens/mpe.png" alt="logo do governo do estado do Ceará" style="width:100%">
+            </div>
+            <div class="coluna">
+              <img src="imagens/if.png" alt="logo do ifce" style="width:100%">
+            </div>
+            <div class="coluna">
+              <img src="imagens/ufc.png" alt="logo da Universidade Federal do Ceará" style="width:100%">
+            </div>
+            <div class="coluna">
+                <img src="imagens/uece.png" alt="logo da Universidade Estadual do Ceará" style="width:100%">
+            </div>
+            <div class="coluna">
+                <img src="imagens/cvt.png" alt="logo do CVT Maranguape" style="width:100%">
+              </div>
+              <div class="coluna">
+                <img src="imagens/ce6.png" alt="logo do governo do estado do Ceará" style="width:100%">
+              </div>
+              
+    </section>
+
+    <section>
+        <h4>Nossas Redes Sociais:</h4><br>         
+            <div class="redes">
+                <img src="imagens/facebook.png" alt="logo do facebook" style="width:100%">
+            </div>
+            <div class="redes">
+              <img src="imagens/twitter.png" alt="logo do twitter" style="width:100%">
+            </div>
+            <div class="redes">
+              <img src="imagens/instagram.png" alt="logo do instagram" style="width:100%">
+            </div>             
+    </section>
+
+</main>
+<footer>
+    <p><h3 style="color:white">Desenvolvido por Lauriston Trindade&copy;</h3></p>
+    <p><h3 style="color:white">2022</h3></p>
+  </footer>
+</body>
+</html>
