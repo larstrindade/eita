@@ -49,7 +49,7 @@
     .dropdownmenu ul, .dropdownmenu li {
             margin: 0;
             padding: 0;
-            height: 20px;
+            height: 10px;
             
         }
         .dropdownmenu ul {
@@ -91,7 +91,7 @@
         }
         li:hover ul#submenu {
             opacity: 1;
-            top: 30px;	/* adjust this as per top nav padding top & bottom comes */
+            top: 20px;	/* adjust this as per top nav padding top & bottom comes */
             visibility: visible;
         }
         #submenu li {
@@ -110,23 +110,19 @@
         margin: auto;
         min-width: 300px;
         max-width: 1200px;
-        padding-top: 10px;
+        padding-top: 5px;
         padding-bottom:30px;
-       
+          
     }
-    
-    
     
         main {
             background-color: white;
             min-width: 330px;
             max-width: 800px;
-            margin: auto;
-           
+            margin: auto;    
             
         }
 
-        
         figcaption {
             text-align: center;
             color:#12033a;
