@@ -22,6 +22,9 @@
         background-color: white; 
     }
 
+    ::marker {
+        color: rgb(44, 8, 151);
+    }
     header > h1 {
         color: rgb(27, 17, 83);
         text-align: center;
@@ -42,8 +45,8 @@
         min-width: 200px;
         max-width: 440px;
         margin: auto;
-        margin-bottom: 20px;
-        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-top: 10px;
        
     }
     .dropdownmenu ul, .dropdownmenu li {
@@ -106,12 +109,14 @@
         }
     
     
+
     nav  {
         margin: auto;
         min-width: 300px;
         max-width: 1200px;
         padding-top: 5px;
-        padding-bottom:30px;
+        padding-bottom:20px;
+       
           
     }
     
@@ -161,6 +166,8 @@
 
         }
 
+       
+
         li {
             font-family: Arial, Helvetica, sans-serif;
             color: #12063a;
@@ -173,7 +180,7 @@
         text-align: center;
         text-decoration: normal;
         font-weight:100;
-        padding-top: 30px;
+        margin-top: 120px;
         padding-bottom: 40px;
         text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.838);
 
@@ -206,8 +213,11 @@
         text-indent:30px;
         text-align:justify;
         margin-top: 15px;
-        
-       
+        line-height: 1.5; 
+    }
+
+    p.intro::first-letter {
+        font-size:2em;
     }
     p > ul {
         font-family: Arial, Helvetica, sans-serif;
@@ -233,18 +243,21 @@
        
     }
 
-    section {
-        padding:0px;
-    }
+   .social {
+    padding-bottom:60px;
+   }
     
 
     footer {
    
         background-color: rgb(53, 125, 116);
         min-width: 300px;
-        padding-top: 80px;
+        width:100%;
+        margin-top: 0px;
         height: 30px;
         padding:0px;
+        
+        
     }
    
 

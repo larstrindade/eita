@@ -36,14 +36,16 @@
   margin: 0px;
   padding: 0px;
   overflow: hidden;
-  background-image: linear-gradient(to right, rgb(56, 56, 112), rgb(56, 134, 56));
+  background-image: linear-gradient(to right, rgb(56, 56, 112), rgba(0, 255, 0, 0.5));
   
 }
 
 .nav li {
+  font-family:'caviar';
   float: left;
   margin:0px;
   border-right: 1px solid #ddd;
+  font-weight:500;
 }
 
 li a, .dropbtn {
@@ -56,7 +58,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(32, 40, 67);
+  background-color: rgb(15, 40, 123);
 }
 
 li.dropdown {
@@ -86,6 +88,16 @@ li.dropdown {
   display: block;
 }
 
+.contatos {
+            color:white;
+            font-weight:500;
+            background-color: rgba(23, 12, 233, 0.474);
+        }
+
+img.teia {
+  width:30%;
+}
+
 </style>
 </head>
 <body>
@@ -95,7 +107,9 @@ li.dropdown {
   <hr>
 
 <nav>
+  
 <div class="nav">
+  
 <ul>
   <li><a href="#home">Início</a></li>
 
@@ -115,7 +129,7 @@ li.dropdown {
     <div class="dropdown-content">
       <a href="#">Farmácia viva</a>
       <a href="#">Hortas</a>
-      <a href="#">Trinhas</a>
+      <a href="#">Trilhas</a>
     </div>
   </li>
 
@@ -128,11 +142,13 @@ li.dropdown {
     </div>
   </li>
 
-  <li style="float:right"><a href="#home">Contatos</a></li>
-        </ul>
+  <li style="float:right"><a href="#home" class="contatos">Contatos</a></li>
 
+        </ul>
+     
 </div>
-</nav>    
+</nav>
+   
     </header>
     <main>
   
@@ -140,9 +156,9 @@ li.dropdown {
     <article>
         <h2>TEIA</h2>
         <center>
-        <img src="imagens/teiag.png" alt="imagem com símbolo da reciclagem">
+        <img src="imagens/teiag.png" alt="imagem com símbolo da reciclagem" class="teia">
         </center>
-        <p>Que a EITA possui, por analogia, a imagem de um grande guarda chuva, isso é bastante fácil de explicar. Mas abrigar e proteger diversos projetos é apenas um dos conceitos-chave que a Estação emana. 
+        <p class="intro">Que a EITA possui, por analogia, a imagem de um grande guarda chuva, isso é bastante fácil de explicar. Mas abrigar e proteger diversos projetos é apenas um dos conceitos-chave que a Estação emana. 
         </p>
         <p>Um dos maiores desafios que temos é garantir a integração entre estes diversos projetos e atividades. De forma fluida e consolidada, estas interligações garantem a dinamização das tecnologias ambientais e sociais, que são a força motriz da Estação. Assim, imaginemos as quatro dimensões da EITA e seus oito projetos macro sendo construídos pelos três níveis da aprendizagem por competências. Somemos a isso os vetores convergentes: econômico, social e ambiental, amparando o surgimento do horizonte da <strong> Sustentabilidade</strong>.
         </p>
@@ -246,7 +262,7 @@ li.dropdown {
     <hr>
    
         </article>
-        <section>
+        <section class="parceiros">
           <h4>Parceiros:</h4><br>
           <div class="row">
              
@@ -272,7 +288,7 @@ li.dropdown {
                 
       </section>
 
-      <section>
+      <section class="social">
           <h4>Nossas Redes Sociais:</h4><br>         
               <div class="redes">
                   <img src="imagens/facebook.png" alt="logo do facebook" style="width:100%">
@@ -286,7 +302,7 @@ li.dropdown {
       </section>
 
   </main>
-  <footer>
+  <footer class="fixo">
       <p><h3 style="color:white">Desenvolvido por Lauriston Trindade&copy;</h3></p>
       <p><h3 style="color:white">2022</h3></p>
     </footer>
