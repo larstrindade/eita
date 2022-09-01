@@ -20,6 +20,7 @@
     }
     body {
         background-color: white; 
+        padding-top: 20px;
     }
 
     ::marker {
@@ -112,6 +113,7 @@
 
     .nav  {
         margin: auto;
+        height: 0.7em;
         min-width: 280px;
         max-width: 1200px;
         padding-top: 10px;
@@ -130,6 +132,7 @@
   
   .nav li {
     font-family:'caviar';
+    font-size: 1.1em;
     float: left;
     margin:0px;
     border-right: 1px solid #ddd;
@@ -142,7 +145,7 @@
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 0px solid #ddd;
   }
   
   li a:hover, .dropdown:hover .dropbtn {
@@ -178,6 +181,7 @@
   
   .contatos {
               color:white;
+              font-size: 1.0em;
               font-weight:500;
               background-color: rgba(23, 12, 233, 0.474);
           }
@@ -188,6 +192,9 @@
             max-width: 800px;
             margin: auto;    
             
+        }
+        article {
+            margin-top:5px;
         }
 
         figcaption {
@@ -253,9 +260,19 @@
         padding-bottom: 40px;
         text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.838);
     }
-        .intro {
-            margin-top: 60px;
-        } 
+
+    .titulo {
+        color: #0a0a58;
+        font: bold 12px/20px sans-serif;
+        font-size: 2em;
+        text-align: center;
+        text-decoration: normal;
+        font-weight:100;
+        margin-top: 50px;
+        padding-bottom: 40px;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.838);
+    }
+       
     
     figcaption {
         font-family: Arial, Helvetica, sans-serif;
@@ -312,11 +329,12 @@
         width: 6%;
         padding-right: 20px;
         max-height: 20px;
+        
        
     }
 
    .social {
-    padding-bottom:60px;
+    margin-bottom:80px;
    }
     
 
@@ -325,7 +343,7 @@
         background-color: rgb(53, 125, 116);
         min-width: 300px;
         width:100%;
-        margin-top: 0px;
+        margin-top: 60px;
         height: 30px;
         padding:0px;
         
