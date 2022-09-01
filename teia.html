@@ -14,88 +14,20 @@
             
             color:rgb(66, 66, 66);
         }
-        /*h2 {
-            padding-top: 90px;
-            padding-bottom: 50px;
-            color:rgb(66, 66, 66);
-        }*/
-        .direita   {
-            float: right;
-            margin-left:10px;
-            margin-top: 0px;
-                   
-        }
-        .esquerda {
-            float:left;
-            margin-right: 10px;
-            margin-top:0px;
-        }
 
-.nav ul {
-  list-style-type:none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  background-image: linear-gradient(to right, rgb(56, 56, 112), rgba(0, 255, 0, 0.5));
-  
-}
-
-.nav li {
-  font-family:'caviar';
-  float: left;
-  margin:0px;
-  border-right: 1px solid #ddd;
-  font-weight:500;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 5px 10px;
-  text-decoration: none;
-  border-bottom: 1px solid #ddd;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(15, 40, 123);
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #93b4f0;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+.teia {
   display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #5776d4;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.contatos {
-            color:white;
-            font-weight:500;
-            background-color: rgba(23, 12, 233, 0.474);
-        }
-
-img.teia {
+  margin-left: auto;
+  margin-right: auto;
   width:30%;
+}
+
+.teia {
+  transition: transform 5s;
+}
+
+.teia:hover {
+  transform: rotate(360deg);
 }
 
 </style>
@@ -111,14 +43,14 @@ img.teia {
 <div class="nav">
   
 <ul>
-  <li><a href="#home">Início</a></li>
+  <li><a href="index.html">Início</a></li>
 
   <li class="dropdown">
-    <a href="#atuacao" class="dropbtn">Atuação</a>
+    <a href="atuacao" class="dropbtn">Atuação</a>
     <div class="dropdown-content">
-      <a href="#">Alfaiataria Social</a>
-      <a href="#">Farmácia viva</a>
-      <a href="#">Hortas didáticas</a>
+      <a href="teia.html">Alfaiataria Social</a>
+      <a href="farmacia.html">Farmácia viva</a>
+      <a href="horta.html">Hortas didáticas</a>
       <a href="#">Nascentes</a>
       <a href="#">Trilhas</a>
     </div>
@@ -154,10 +86,12 @@ img.teia {
   
 
     <article>
-        <h2>TEIA</h2>
-        <center>
-        <img src="imagens/teiag.png" alt="imagem com símbolo da reciclagem" class="teia">
-        </center>
+        <h2 class="intro">TEIA</h2>
+        
+        
+        <div>
+        <img src="imagens/teiag.png" alt="imagem com símbolo da reciclagem" class="teia"></div>
+        
         <p class="intro">Que a EITA possui, por analogia, a imagem de um grande guarda chuva, isso é bastante fácil de explicar. Mas abrigar e proteger diversos projetos é apenas um dos conceitos-chave que a Estação emana. 
         </p>
         <p>Um dos maiores desafios que temos é garantir a integração entre estes diversos projetos e atividades. De forma fluida e consolidada, estas interligações garantem a dinamização das tecnologias ambientais e sociais, que são a força motriz da Estação. Assim, imaginemos as quatro dimensões da EITA e seus oito projetos macro sendo construídos pelos três níveis da aprendizagem por competências. Somemos a isso os vetores convergentes: econômico, social e ambiental, amparando o surgimento do horizonte da <strong> Sustentabilidade</strong>.
@@ -189,7 +123,7 @@ img.teia {
     <h2>Sete Saberes</h2>
    
     <figure>
-      <blockquote>
+      <blockquote class="citacao">
         “Todo desenvolvimento verdadeiramente humano significa o desenvolvimento conjunto das autonomias individuais, das participações comunitárias e do sentimento de pertencer à espécie humana”.
       </blockquote>
       <figcaption>
