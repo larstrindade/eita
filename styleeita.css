@@ -49,7 +49,7 @@
         font-family:'forest';
         font-weight: 100;
         font-size: 10em;
-        width:30%;
+        width:100%;
         text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.362);
         padding: 0px;
     }
@@ -133,7 +133,7 @@
     .nav  {
         margin: auto;
         height: 0.7em;
-        min-width: 320px;
+        min-width: 300px;
         max-width: 1000px;
         padding-top: 10px;
         padding-bottom:20px;      
