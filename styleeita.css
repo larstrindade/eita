@@ -34,10 +34,7 @@
         padding-top: 20px;
     }
 
-    header {
-        min-width: 320px;
-        max-width: px;
-    }
+    
 
     ::marker {
         color: rgb(44, 8, 151);
@@ -134,7 +131,7 @@
         margin: auto;
         height: 0.7em;
         min-width: 300px;
-        max-width: 1000px;
+        max-width: 1200px;
         padding-top: 10px;
         padding-bottom:20px;      
     }
@@ -143,6 +140,7 @@
 .nav ul {
     list-style-type:none;
     margin: auto;
+    
     padding: 0px;
     overflow: hidden;
     background-image: linear-gradient(to right, rgb(56, 56, 112), rgba(0, 255, 0, 0.5));
@@ -207,7 +205,7 @@
 
         main {
             background-color: white;
-            min-width: 320px;
+            min-width: 300px;
             max-width: 1000px;
             margin: auto;    
             
