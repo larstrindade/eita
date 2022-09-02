@@ -188,8 +188,8 @@
 
         main {
             background-color: white;
-            min-width: 330px;
-            max-width: 800px;
+            min-width: 280px;
+            max-width: 1000px;
             margin: auto;    
             
         }
@@ -336,7 +336,12 @@
    .social {
     margin-bottom:80px;
    }
-    
+
+section {
+        min-width: 330px;
+        max-width: 1000px;
+        margin:auto;
+}
 
     footer {
    
