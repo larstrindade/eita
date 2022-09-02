@@ -137,7 +137,7 @@
     
 .nav ul {
     list-style-type:none;
-    margin: center;
+    margin: auto;
     padding: 0px;
     overflow: hidden;
     background-image: linear-gradient(to right, rgb(56, 56, 112), rgba(0, 255, 0, 0.5));
