@@ -273,19 +273,19 @@
         text-decoration: normal;
         font-weight:100;
         margin-top: 100px;
-        padding-bottom: 40px;
+        padding-bottom: 35px;
         text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.838);
     }
 
     .titulo {
         color: #0a0a58;
         font: bold 12px/20px sans-serif;
-        font-size: 2em;
+        font-size: 2.5em;
         text-align: center;
         text-decoration: normal;
         font-weight:100;
         margin-top: 50px;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.838);
     }
        
@@ -340,14 +340,7 @@
       
     }
 
-    .redes {
-        float: left;
-        width: 6%;
-        padding-right: 20px;
-        max-height: 20px;
-        
-       
-    }
+   
 
    .social {
     margin-bottom:80px;
@@ -357,6 +350,59 @@ section {
         min-width: 330px;
         max-width: 1000px;
         margin:auto;
+        
+}
+.equipe p {
+    margin-bottom: 100px;
+}
+
+
+figure img {
+    
+    border-radius: 50%;
+    padding: 20px;
+    overflow: hidden;
+    width: 20%;
+    min-width: 150px;
+    filter: grayscale(100%);
+    display:flex;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.instagram {
+   width:0%;
+    min-width: 150px;
+    padding-top: 30px;
+    display:flex;
+    margin:auto;
+    justify-content: space-around;
+}
+.imagem {
+   
+    box-align: center;
+}
+
+figure img:hover {
+    filter:none;
+}
+
+.escola {
+    padding-bottom: 30px;
+    width: 100%;
+    
+}
+
+.nome {
+    margin-top:100px;
+    color:#1c035f;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.816)
+}
+.subtitulo {
+    font-family: 'caviar';
+    color:#0a0a58;
 }
 
     footer {
