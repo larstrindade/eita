@@ -19,21 +19,10 @@
             color:#500c71;
         }
         h2 {
-            padding-top: 90px;
-            padding-bottom: 50px;
+           
             color:#500c71;
         }
-        .direita   {
-            float: right;
-            margin-left:10px;
-            margin-top: 0px;
-                   
-        }
-        .esquerda {
-            float:left;
-            margin-right: 10px;
-            margin-top:0px;
-        }
+       
 
        
 *{
@@ -42,65 +31,65 @@
     box-sizing: border-box;
 }
 
-.container-galeria{
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: 300px;
-    padding: 5px;
-    grid-gap: 5px;
+.masonry { /* Masonry container */
+    -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+   margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
 }
-
-.item-galeria{
-    position: relative;
-}
-
-.item-galeria .img-galeria{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.item-galeria .title-galeria{
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.558);
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
+.item {
+    color:#500c71;
     font-family: 'caviar';
+    font-weight: 600;
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+    -webkit-transition: 1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
 }
 
+.item img{max-width:100%;}
 
-.h-1{
-    grid-row: span 1;
-}
-
-.h-2{
-    grid-row: span 2;
-}
-
-.w-1{
-    grid-column: span 1;
-}
-
-.w-2{
-    grid-column: span 2;
-}
-
-
-@media(max-width:768px){
-    .container-galeria{
-        grid-template-columns: repeat(1,1fr);
-        grid-auto-rows: 50vh;
+@media only screen and (max-width: 320px) {
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
     }
+}
 
-    .h-2{
-        grid-row: span 1;
+@media only screen and (min-width: 321px) and (max-width: 500px){
+    .masonry {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
     }
-    
-    .w-2{
-        grid-column: span 1;
+}
+@media only screen and (min-width: 501px) and (max-width: 700px){
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media only screen and (min-width: 701px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
     }
 }
   
@@ -134,9 +123,9 @@
               <li class="dropdown">
                 <a href="#" class="dropbtn">Galeria</a>
                 <div class="dropdown-content">
-                  <a href="farmacia.html">Farmácia viva</a>
-                  <a href="horta.html">Hortas</a>
-                  <a href="trilhas.html">Trilhas</a>
+                  <a href="galeriafarmacia.html">Farmácia viva</a>
+                  <a href="galeriahorta.html">Hortas</a>
+                  <a href="galeriatrilhas.html">Trilhas</a>
                 </div>
               </li>
             
@@ -148,9 +137,7 @@
                   <a href="teia.html">Espaço conceitual</a>
                 </div>
               </li>
-            
-             
-            
+
                     </ul>
                  
             </div>
@@ -160,66 +147,61 @@
     <main>
   
 
-    
-        <h2>Hortas</h2>
-        <div class="container-galeria">
-          <div class="item-galeria w-2 h-2">
-              <img src="imagens/horta/horta5.png" alt="" class="img-galeria">
-              <span class="title-galeria">
-                  Artesanias
-              </span>
+        <h2>Galeria Horta</h2>
+        <div class="masonry">
+          <div class="item">
+            Formação teórica
+            <img src="imagens/horta/horta2.png">
           </div>
-          <div class="item-galeria w-2 h-1">
-              <img src="imagens/horta/horta1.png" alt="" class="img-galeria">
-              <span class="title-galeria">
-                  Light Paint
-              </span>
+          <div class="item">
+            Dinãmicas
+            <img src="imagens/horta/horta1.png">
           </div>
-          <div class="item-galeria w-2 h-1">
-              <img src="imagens//horta/horta3.png" alt="" class="img-galeria">
-              <span class="title-galeria">
-                  Prática de desenho
-              </span>
+          <div class="item">
+            Encontro CEI Wilson Bastos
+            <img src="imagens/horta/horta7.png">
           </div>
-          <div class="item-galeria w-2 h-1">
-              <img src="imagens/horta/horta8.png" alt="" class="img-galeria">
-              <span class="title-galeria">
-                  Inclusão
-              </span>
+          <div class="item">
+            Atividades CEM santa Rita
+            <img src="imagens/horta/horta9.png">
           </div>
-          <div class="item-galeria w-2 h-2">
-              <img src="./imagens/horta/horta12.png" alt="" class="img-galeria">
-              <span class="title-galeria">
-                  Interatividade
-              </span>
+          <div class="item">
+            Artesanias ecoeducativas
+            <img src="imagens/horta/horta3.png">
           </div>
-          <div class="item-galeria w-2 h-1">
-            <img src="./imagens/horta/horta2.png" alt="" class="img-galeria">
-            <span class="title-galeria">
-                Teoria em sala de aula
-            </span>
-        </div>
-          <div class="item-galeria w-2 h-2">
-              <img src="imagens/horta/horta14.png" alt="" class="img-galeria">
-              <span class="title-galeria">
-                  Composteira artesanal
-              </span>
+          <div class="item">
+            Prática de irrigação
+            <img src="imagens/horta/horta4.png">
           </div>
+          <div class="item">
+            Atividades inclusivas
+            <img src="imagens/horta/horta8.png">
+          </div>
+          <div class="item">
+            Aula Laboraório CVT
+            <img src="imagens/horta/horta10.png">
+          </div>
+          <div class="item">
+            Prática de irrigação
+            <img src="imagens/horta/horta16.jpg">
+          </div>
+          <div class="item">
+            Interatividade digital
+            <img src="imagens/horta/horta12.png">
+          </div>
+          <div class="item">
+            Montagem de composteira
+            <img src="imagens/horta/horta13.png">
+          </div>
+
+          <div class="item">
+            Micro aspersão
+            <img src="imagens/horta/horta15.jpg">
+          </div>
+
          
-          <div class="item-galeria w-2 h-1">
-              <img src="imagens/horta/horta11.png" alt="" class="img-galeria">
-              <span class="title-galeria">
-                  Prática de laboratório
-              </span>
-          </div>
-          <div class="item-galeria w-2 h-1">
-            <img src="imagens/horta/horta4.png" alt="" class="img-galeria">
-            <span class="title-galeria">
-                Práticas de irrigação
-            </span>
-        </div>
-      </div>
-      <section>
+        </main>
+          <section>
         <h4>Parceiros:</h4><br>
         <div class="row">
            
@@ -247,7 +229,7 @@
 
    
 
-</main>
+
 <footer>
     <p><h3 style="color:white">Desenvolvido por Lauriston Trindade&copy;</h3></p>
     <p><h3 style="color:white">2022</h3></p>

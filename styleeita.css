@@ -129,7 +129,7 @@
     .nav  {
         margin: auto;
         height: 0.7em;
-        min-width: 300px;
+        min-width: 320px;
         max-width: 1200px;
         padding-top: 10px;
         padding-bottom:20px;      
@@ -139,10 +139,9 @@
 .nav ul {
     list-style-type:none;
     margin: auto;
-    
     padding: 0px;
     overflow: hidden;
-    background-image: linear-gradient(to right, rgb(56, 56, 112), rgba(0, 255, 0, 0.5));
+    background-image: linear-gradient(to right, rgb(56, 56, 112), rgba(255, 255, 255));
     
   }
   
