@@ -205,7 +205,8 @@
             background-color: white;
             min-width: 350px;
             max-width: 1000px;
-            margin: auto;    
+            margin: auto; 
+            padding: 5px;   
             
         }
 
