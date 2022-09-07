@@ -31,7 +31,6 @@
     }
     body {
         background-color: white; 
-        padding-top: 20px;
     }
 
     
@@ -128,11 +127,11 @@
 
     .nav  {
         margin: auto;
-        height: 0.7em;
+        height: 0.65em;
         min-width: 300px;
-        max-width: 1200px;
-        padding-top: 10px;
-        padding-bottom:15px;      
+        max-width: 1000px;
+        padding-top: 15px;
+        padding-bottom:20px;      
     }
     
     
@@ -202,6 +201,7 @@
           }
 
         main {
+            margin-top:0px;
             background-color: white;
             min-width: 300px;
             max-width: 1000px;
@@ -209,7 +209,8 @@
             
         }
         article {
-            margin-top:15px;
+            margin-top:0px;
+            padding:0px;
         }
 
         figcaption {
@@ -221,9 +222,7 @@
             font-size:0.8em;
         }
         
-        article {
-            padding: 0px;
-        }
+       
 
             article > p{
                 text-indent: 30px;
@@ -285,7 +284,8 @@
         text-align: center;
         text-decoration: normal;
         font-weight:100;
-        margin-top: 50px;
+        
+        margin-top:20px;
         padding-bottom: 30px;
         text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.838);
     }
