@@ -208,6 +208,12 @@
             margin: auto;    
             
         }
+
+        .eita {
+            max-width:1000px;
+            min-width:350px;
+            margin:auto;
+        }
         article {
             margin-top:0px;
             padding:0px;
