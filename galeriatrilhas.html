@@ -11,22 +11,28 @@
 
     <style>
         * {
-    margin:0;
-    padding: 0;
+    margin:0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
-        body {
-            background-color: white;
+body {
+            background-image: url('imagens/trilha.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
         }
         header > h1 {
             
             color:#19d3b4;
         }
-        h2 {
-            padding-top: 90px;
-            padding-bottom: 50px;
+        
+        .titulo{
             color:#19d3b4;
+        }
+
+        .nav ul {
+            background-image: linear-gradient(to right, rgb(12, 68, 11), rgb(255, 255, 255))
         }
 
 
@@ -45,7 +51,7 @@
     font-size: .85em;
 }
 .item {
-    color:#257405;
+    color:#12044a;
     font-family: 'caviar';
     font-weight: 600;
     display: inline-block;
@@ -91,11 +97,6 @@
         column-count: 3;
     }
 }      
-
-       
-
-
-
   
     </style>
 </head>
@@ -110,7 +111,7 @@
             <div class="nav">
               
             <ul>
-              <li><a href="#">Início</a></li>
+              <li><a href="index.html">Início</a></li>
             
               <li class="dropdown">
                 <a href="#" class="dropbtn">Atuação</a>
@@ -141,8 +142,6 @@
                 </div>
               </li>
             
-              
-            
                     </ul>
                  
             </div>
@@ -150,7 +149,8 @@
         
     </header>
     <main>
-        <h2>Galeria Trilhas</h2>
+      <article>
+        <h2 class="titulo">Galeria Trilhas</h2>
         <div class="masonry">
           <div class="item">
             Floração do pajeú
@@ -209,10 +209,7 @@
             Pedra do Totem ou "Guardião".
             <img src="imagens/trilhas/trilha14.jpg">
           </div>
-
-         
-
-    
+        </article>
     </main>
       <section>
         <h4>Parceiros:</h4><br>

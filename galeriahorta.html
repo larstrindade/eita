@@ -10,26 +10,32 @@
     <link rel="stylesheet" href='styleeita.css'>
 
     <style>
- 
-        body {
-            background-color: white;
+          * {
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+body {
+            background-image: url('imagens/hortafundo.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+            
         }
+ 
+      
         header > h1 {
             
             color:#500c71;
         }
-        h2 {
-           
-            color:#500c71;
+        .titulo {
+           color:#500c71;
         }
        
 
        
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 .masonry { /* Masonry container */
     -webkit-column-count: 4;
@@ -146,9 +152,9 @@
         
     </header>
     <main>
-  
+  <article>
 
-        <h2>Galeria Horta</h2>
+        <h2 class="titulo">Galeria Horta</h2>
         <div class="masonry">
           <div class="item">
             Formação teórica
@@ -200,7 +206,7 @@
             <img src="imagens/horta/horta15.jpg">
           </div>
 
-         
+        </article>
         </main>
           <section>
         <h4>Parceiros:</h4><br>

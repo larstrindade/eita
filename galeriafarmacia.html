@@ -10,18 +10,28 @@
     <link rel="stylesheet" href='styleeita.css'>
 
     <style>
+      * {
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+body {
+            background-image: url('imagens/hortela.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: fixed;
+        }
        
         header > h1 {
-
             color:#257405;
         }
 
-        h2 {    
+        .titulo {    
             color:#257405;
         }
 
         .nav ul {
-           
             background-image: linear-gradient(to right, rgb(12, 68, 11), rgb(255, 255, 255))
         }
 
@@ -43,7 +53,7 @@
     font-size: .85em;
 }
 .item {
-    color:#257405;
+    color:#043103;
     font-family: 'caviar';
     font-weight: 600;
     display: inline-block;
@@ -117,7 +127,7 @@
                   <div class="dropdown-content">
                     <a href="#">Farmácia viva</a>
                     <a href="galeriahorta.html">Hortas</a>
-                    <a href="galeriatrilha.html">Trilhas</a>
+                    <a href="galeriatrilhas.html">Trilhas</a>
                   </div>
                 </li>
               
@@ -135,8 +145,8 @@
         
     </header>
     <main>
-  
-        <h2>Galeria Farmácia Viva</h2>
+    <article>
+        <h2 class="titulo">Galeria Farmácia Viva</h2>
         <div class="masonry">
           <div class="item">
             Chá de boldo
@@ -206,6 +216,7 @@
             Formação de ACS
             <img src="imagens/farma15.png">
           </div>
+        </article>
         </main>
 
       <section>
