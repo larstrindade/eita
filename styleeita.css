@@ -399,7 +399,7 @@ figure img:hover {
 }
 
 .nome {
-    margin-top:100px;
+    margin-top:50px;
     color:#1c035f;
     font-size: 1.5em;
     font-weight: 700;
@@ -409,6 +409,10 @@ figure img:hover {
 .subtitulo {
     font-family: 'caviar';
     color:#0a0a58;
+}
+
+.serra {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
     footer {
