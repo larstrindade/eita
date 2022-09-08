@@ -322,9 +322,10 @@
         color: #ffffff;
         font-family: 'caviar';
         font-size: 1em;
-        text-align: center;
+       
         text-decoration: normal;
         font-weight:100;
+        text-align: center;
         
     }
     h4 {
@@ -368,11 +369,12 @@
     margin-bottom:80px;
    }
 
-section {
+.rodape {
         min-width: 380px;
         max-width: 1000px;
         margin:auto;
         padding:5px;
+        margin-bottom:100px;
         
 }
 .equipe p {
@@ -449,20 +451,17 @@ figure img:hover {
     footer {
    
         background-color: rgb(53, 125, 116);
-        
-        
         margin-top: 60px;
         height: 30px;
         padding-left:15px;
         padding-right:15px;
         min-width: 380px;
         max-width: 1000px;
-        margin-left: auto;
-        margin-right:auto;    
-
+        margin:auto;
        
     }
-   
+
+  
 
   
    
