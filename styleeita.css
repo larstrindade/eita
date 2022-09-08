@@ -217,8 +217,20 @@
             max-width:1000px;
             min-width:380px;
             margin:auto;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .sub {
+            color: #0f0245;
+            font-family: 'caviar';
+            font-size: 1em;
+            margin:auto;
+            padding-left: 15px;
+            padding-right:15px;
+            text-decoration: normal;
+            font-weight:100;
+            
         }
         article {
             margin-top:0px;
