@@ -425,11 +425,13 @@ figure img:hover {
     footer {
    
         background-color: rgb(53, 125, 116);
-        min-width: 380px;
+        
         width:100%;
         margin-top: 60px;
         height: 30px;
         padding:0px;   
+
+       
     }
    
 
