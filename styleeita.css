@@ -128,7 +128,7 @@
     .nav  {
         margin: auto;
         height: 0.65em;
-        min-width: 400px;
+        min-width: 360px;
         max-width: 1000px;
         padding-top: 15px;
         padding-bottom:20px;      
@@ -215,6 +215,8 @@
             max-width:1000px;
             min-width:350px;
             margin:auto;
+            padding-left: 5px;
+            padding-right: 5px;
         }
         article {
             margin-top:0px;
