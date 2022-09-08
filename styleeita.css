@@ -241,9 +241,10 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             color:#12033a;
-            text-align: right;
-            box-shadow: none;
+            max-width:400px;
+            margin:auto;
             font-size:0.8em;
+            padding:5px;
         }
         
        
@@ -278,9 +279,9 @@
         }
 
         .centro {
-            float: right;
-            margin: center;
-            padding: 10px;
+            display: block;
+           
+           
         }
 
 
@@ -390,6 +391,11 @@ figure img {
     margin-left:auto;
     margin-right: auto;
 }
+img {
+    display:block;
+    margin:auto;
+    
+}
 
 .instagram {
     width:0%;
@@ -435,7 +441,7 @@ figure img:hover {
     width:50%;  
 }
 #sede {
-    margin:auto;
+    box-align:center;
 }
 
     footer {
