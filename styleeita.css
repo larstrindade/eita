@@ -31,6 +31,7 @@
     }
     body {
         background-color: white; 
+       
     }
 
     
@@ -61,7 +62,7 @@
         max-width: 440px;
         margin: auto;
         margin-bottom: 0px;
-        margin-top: 10px;
+        margin-top: 30px;
        
     }
     .dropdownmenu ul, .dropdownmenu li {
@@ -133,8 +134,8 @@
         padding-top: 15px;
         padding-bottom:20px;   
         padding-left:15px;
-        padding-right:15px;   
-        
+        padding-right:15px;  
+       
     }
     
     
@@ -419,11 +420,7 @@ figure img:hover {
     filter:none;
 }
 
-.escola {
-    padding-bottom: 30px;
-    width: 100%;
-    
-}
+
 
 .nome {
     margin-top:50px;
