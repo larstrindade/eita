@@ -141,7 +141,7 @@
         display:block;
         margin: auto;
         height: 0.65em;
-        min-width: 400px;
+        min-width: 440px;
         max-width: 1000px;
         padding-top: 15px;
         padding-bottom:20px;   
@@ -220,7 +220,7 @@
         main {
             margin-top:0px;
             background-color: white;
-            min-width: 400px;
+            min-width: 440px;
             max-width: 1000px;
             margin-left: auto;
             margin-right:auto; 
