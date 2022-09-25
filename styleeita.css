@@ -141,7 +141,7 @@
         display:block;
         margin: auto;
         height: 0.65em;
-        min-width: 400px;
+        min-width: 500px;
         max-width: 1000px;
         padding-top: 15px;
         padding-bottom:20px;   
@@ -474,7 +474,7 @@ figure img:hover {
         height: 30px;
         padding-left:15px;
         padding-right:15px;
-        min-width: 440px;
+        min-width: 500px;
         max-width: 1000px;
         margin:auto;
        
