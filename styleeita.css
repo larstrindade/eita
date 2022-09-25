@@ -137,7 +137,7 @@
         display:block;
         margin: auto;
         height: 0.65em;
-        min-width: 380px;
+        min-width: 300px;
         max-width: 1000px;
         padding-top: 15px;
         padding-bottom:20px;   
@@ -216,9 +216,10 @@
         main {
             margin-top:0px;
             background-color: white;
-            min-width: 380px;
+            min-width: 300px;
             max-width: 1000px;
-            margin: auto; 
+            margin-left: auto;
+            margin-right:auto; 
             padding: 35px;   
             
         }
@@ -461,7 +462,7 @@ figure img:hover {
         height: 30px;
         padding-left:15px;
         padding-right:15px;
-        min-width: 380px;
+        min-width: 300px;
         max-width: 1000px;
         margin:auto;
        
