@@ -139,7 +139,8 @@
 
     .nav  {
         display:block;
-        margin: auto;
+        margin-left: auto;
+        margin-right:auto;
         height: 0.65em;
         min-width: 440px;
         max-width: 1000px;
