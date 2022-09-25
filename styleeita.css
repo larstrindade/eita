@@ -34,7 +34,14 @@
        
     }
 
-    
+    header {
+        margin-top:0px;
+        background-color: white;
+        min-width: 380px;
+        max-width: 1000px;
+        margin: auto; 
+          
+    }
 
     ::marker {
         color: rgb(44, 8, 151);
