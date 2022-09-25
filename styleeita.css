@@ -457,7 +457,7 @@ figure img:hover {
     footer {
    
         background-color: rgb(53, 125, 116);
-        margin-top: 60px;
+        margin-top: 20px;
         height: 30px;
         padding-left:15px;
         padding-right:15px;
@@ -465,6 +465,10 @@ figure img:hover {
         max-width: 1000px;
         margin:auto;
        
+    }
+
+    footer > p {
+        margin-top:0px;
     }
 
   
