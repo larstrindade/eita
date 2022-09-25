@@ -37,7 +37,7 @@
 
     ::marker {
         color: rgb(44, 8, 151);
-        
+
     }
     header > h1 {
         color: rgb(27, 17, 83);
@@ -210,7 +210,7 @@
             min-width: 380px;
             max-width: 1000px;
             margin: auto; 
-            padding: 15px;   
+            padding: 25px;   
             
         }
 
