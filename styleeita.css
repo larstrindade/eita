@@ -37,7 +37,7 @@
     header {
         margin-top:0px;
        
-        min-width: 380px;
+        min-width: 440px;
         max-width: 1000px;
         margin: auto; 
           
@@ -473,7 +473,7 @@ figure img:hover {
         height: 30px;
         padding-left:15px;
         padding-right:15px;
-        min-width: 300px;
+        min-width: 440px;
         max-width: 1000px;
         margin:auto;
        
