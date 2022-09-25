@@ -207,7 +207,7 @@
         main {
             margin-top:0px;
             background-color: white;
-            min-width: 380px;
+            min-width: 350px;
             max-width: 1000px;
             margin: auto; 
             padding: 25px;   
@@ -398,7 +398,7 @@ figure img {
 img {
     display:block;
     margin:auto;
-    padding:15px;
+    padding:25px;
     
 }
 
