@@ -139,10 +139,9 @@
 
     .nav  {
         display:block;
-        margin-left: auto;
-        margin-right:auto;
+        margin: auto;
         height: 0.65em;
-        min-width: 440px;
+        min-width: 400px;
         max-width: 1000px;
         padding-top: 15px;
         padding-bottom:20px;   
@@ -463,7 +462,7 @@ figure img:hover {
 .sede {
     display:block;
     margin:auto;
-    float:center;
+    
 }
 
     footer {
