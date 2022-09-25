@@ -461,7 +461,9 @@ figure img:hover {
 
 .sede {
     display:block;
-    margin:auto;
+    margin-left:auto;
+    margin-right:auto;
+    
     
 }
 
