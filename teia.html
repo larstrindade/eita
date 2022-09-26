@@ -114,6 +114,23 @@ body {
         
         <div>
         <img src="imagens/teiag.png" alt="imagem com símbolo da reciclagem" class="teia"></div>
+
+        <script>
+                  function setup() {
+          createCanvas(400, 400);
+          colorMode(HSL);
+        }
+
+        function draw() {
+          translate(200, 200);
+          noStroke();
+          let x = cos(frameCount / 40) * 100;
+          let y = sin(frameCount / 50) * 100;
+
+          fill(frameCount % 360, 25, 50)
+          ellipse(x, y, 20, 20);
+        }
+        </script>
         
         <p class="intro">Que a EITA possui, por analogia, a imagem de um grande guarda chuva, isso é bastante fácil de explicar. Mas abrigar e proteger diversos projetos é apenas um dos conceitos-chave que a Estação emana. 
         </p>
