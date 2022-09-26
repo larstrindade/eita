@@ -182,6 +182,71 @@ body {
         <br>
         <h2 class="titulo">Rio Maranguapinho</h2>
 
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        
+        <figure class="highcharts-figure">
+            <div id="container1"></div>
+            <p class="highcharts-description">
+                
+            </p>
+        </figure>
+        
+        <script>
+        
+            Highcharts.chart('container1', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Dimensões - Nascentes'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: 'Foco:',
+            colorByPoint: true,
+            data: [{
+                name: 'Educação',
+                y: 10
+               
+            },  {
+                name: 'Pesquisa',
+                y: 50,
+                sliced: true,
+                selected: true
+            },  {
+                name: 'Empreendedorismo',
+                y: 10
+            }, {
+                name: 'Extensão',
+                y: 30
+            }]
+        }]
+        });
+        
+        </script>
       
 
         <div class="direita">
