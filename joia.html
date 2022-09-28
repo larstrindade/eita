@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alfaiataria Social</title>
+    <title>Economia Criativa</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href='styleeita.css'>
     <style>
@@ -18,39 +18,7 @@ body {
             background-attachment: scroll;
         }
 
-        header > h1 {
-            
-            color:rgb(192, 118, 7);
-        }
-        h2 {
-            color:rgb(192, 118, 7);
-        }
-
-        .titulo {
-            color: rgb(192, 118, 7)
-        }
-
     
-        .nav ul {
-           
-            background-image: linear-gradient(to right, rgb(156, 141, 4), rgb(192, 118, 7));        
-}
-
-        li a:hover, .dropdown:hover .dropbtn {
-            background-color: rgb(203, 106, 9);
-          }
-
-          .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #d0bc08;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-
-          .dropdown-content a:hover {background-color: #e8690e;}
-
               
 .highcharts-figure,
 .highcharts-data-table table {
@@ -102,50 +70,59 @@ body {
 <body>
 
     <header>
+      <!--
         <h1 class="eita">EITA</h1>
-        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3>
+        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3> -->
+
+        <div class="text-box">
+          <h1>
+            <span class="text-primary">EITA</span>
+            <span class="text-sub">Estação de Inovações e Tecnologias Ambientais</span>
+          </h1>
+        </div>
        
-       <nav>
+        <nav>
   
-<div class="nav">
-  
-<ul>
-  <li><a href="index.html">Início</a></li>
+          <ul id="menu"> <!-- Inicia o menu principal --> 
+              <li><a href="index.html">Início</a> <!-- Item normal do menu --> 
+              <li><a href="#" class="drop">Projetos</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                  <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                      <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                          <span>Atuação</span> <!-- Título da coluna -->
+                          <li><a href="joia.html" target="_self">Economia Criativa</a></li>
+                          <li><a href="farmacia.html" target="_self">Farmácia Viva</a></li>
+                          <li><a href="horta.html" target="_self">Hortas Didáticas</a></li>
+                          <li><a href="nascentes.html" target="_self">Nascentes</a></li>
+                          <li><a href="trilhas.html" target="_self">Trilhas</a></li>
+                      </ul> <!-- fecha o box de uma das 3 colunas com os links -->
 
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Atuação</a>
-    <div class="dropdown-content">
-      <a href="#">Economia Criativa</a>
-      <a href="escola.html">Escola</a>
-      <a href="farmacia.html">Farmácia viva</a>
-      <a href="horta.html">Hortas didáticas</a>
-      <a href="nascentes.html">Nascentes</a>
-      <a href="trilhas.html">Trilhas</a>
-    </div>
-  </li>
+              <li><a href="#" class="drop">Galeria</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                  <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                      <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                          <span>Fotografias</span> <!-- Título da coluna -->
+                          <li><a href="galeriafarmacia.html" target="_self">Farmácia Viva</a></li>
+                          <li><a href="galeriahorta.html" target="_self">Hortas</a></li>
+                          <li><a href="galeriatrilhas.html" target="_self">Serra de Maranguape</a></li>
+                          <li><a href="galeriaaratanha.html" target="_self">Serra da Aratanha</a></li>
+                          <li><a href="galeriatrilhas.html" target="_self">Trilhas</a></li>
+                      </ul> <!-- fecha o box de uma das 3 colunas com os links -->        
+                      
 
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Galeria</a>
-    <div class="dropdown-content">
-      <a href="galeriafarmacia.html">Farmácia viva</a>
-      <a href="galeriahorta.html">Hortas</a>
-      <a href="galeriatrilha.html"">Trilhas</a>
-      <a href="galeriaaratanha.html">Aratanha</a>
-    </div>
-  </li>
+              <li><a href="#" class="drop">Sobre</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                  <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                      <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                          <span>Suporte</span> <!-- Título da coluna -->
+                          <li><a href="equipe.html" target="_self">Nossa Equipe</a></li>
+                          <li><a href="sede.html" target="_self">Espaço Físico</a></li>
+                          <li><a href="teia.html" target="_self">Espaço Conceitual</a></li>
+                         
+                      </ul> <!-- fecha o box de uma das 3 colunas com os links -->   
+                              
 
-  <li class="dropdown">
-    <a href="#" class="dropbtn">Sobre</a>
-    <div class="dropdown-content">
-      <a href="equipe.html">Nossa equipe</a>
-      <a href="sede.html">Espaço Físico</a>
-      <a href="teia.html">Espaço conceitual</a>
-    </div>
-  </li>
-        </ul>
-     
-</div>
-</nav>
+                  </div> <!-- Fecha o box que conterá o conteúdo do dropdown -->
+              </li> <!-- Fecha item dropdown do menu -->
+          </ul> <!-- Fecha o menu principal --> 
+          </nav>
         
     </header>
     <main>
@@ -327,7 +304,6 @@ body {
     </main>
     <footer>
         <p><h3 style="color:white">Desenvolvido por Lauriston Trindade&copy;</h3></p>
-       
       </footer>
 </body>
 </html>
