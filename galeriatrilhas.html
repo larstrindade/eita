@@ -35,68 +35,6 @@ body {
             background-image: linear-gradient(to right, rgb(14, 50, 83), rgb(13, 97, 200))
         }
 
-
-.masonry { /* Masonry container */
--webkit-column-count: 4;
-  -moz-column-count:4;
-  column-count: 4;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-   margin: 1.5em;
-    padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
-    font-size: .85em;
-}
-.item {
-    color:#12044a;
-    font-family: 'caviar';
-    font-weight: 600;
-    display: inline-block;
-    background: #fff;
-    padding: 1em;
-    margin: 0 0 1.5em;
-    width: 100%;
-    -webkit-transition: 1s ease all;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
-}
-
-.item img{max-width:100%;}
-
-@media only screen and (max-width: 320px) {
-    .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
-
-@media only screen and (min-width: 321px) and (max-width: 500px){
-    .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
-@media only screen and (min-width: 501px) and (max-width: 700px){
-    .masonry {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-@media only screen and (min-width: 701px) {
-    .masonry {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-}      
   
     </style>
 </head>
@@ -157,65 +95,56 @@ body {
     <main>
       <article>
         <br>
-        <h2 class="titulo">Galeria </h2>
-        <div class="masonry">
-          <div class="item">
-            Floração do pajeú
-            <img src="imagens/trilhas/trilha1.jpg">
-          </div>
-          <div class="item">
-            Calango
-            <img src="imagens/trilhas/trilha2.jpg">
-          </div>
-          <div class="item">
-            Libelinha azul
-            <img src="imagens/trilhas/trilha3.jpg">
-          </div>
-          <div class="item">
-            Jenipapo
-            <img src="imagens/trilhas/trilha4.jpg">
-          </div>
-          <div class="item">
-            Registro das espécies
-            <img src="imagens/trilhas/trilha5.jpg">
-          </div>
-          <div class="item">
-            Vista de Maranguape
-            <img src="imagens/trilhas/trilha6.jpg">
-          </div>
-          <div class="item">
-            Trilhas na serra
-            <img src="imagens/trilhas/trilha7.jpg">
-          </div>
-          <div class="item">
-            Angico
-            <img src="imagens/trilhas/trilha8.jpg">
-          </div>
-          <div class="item">
-            Árvores centenárias
-            <img src="imagens/trilhas/trilha9.jpg">
-          </div>
-          <div class="item">
-            Mirante da pedra Branca
-            <img src="imagens/trilhas/trilha10.jpg">
-          </div>
-          <div class="item">
-            Vista de Maranguape
-            <img src="imagens/trilhas/trilha11.jpg">
-          </div>
-          <div class="item">
-            Pico da Pedra do Derretido
-            <img src="imagens/trilhas/trilha12.jpg">
-          </div>
+        <h2 class="titulo">Galeria Maranguape</h2><br>
+<div id="gallery" class="container-fluid">  
+  <img src="imagens/trilhas/trilha1.jpg" class="img-responsive">
+  <img src="imagens/trilhas/trilha2.jpg" class="img-responsive">
+   <img src="imagens/trilhas/trilha4.jpg" class="img-responsive">
+   <img src="imagens/trilhas/trilha5.jpg" class="card img-responsive">
+   <img src="imagens/trilhas/trilha6.jpg" class="img-responsive">
+  <img src="imagens/trilhas/trilha7.jpg" class="img-responsive">
+  <img src="imagens/trilhas/trilha8.jpg" class="img-responsive">
+<img src="imagens/trilhas/trilha9.jpg" class="img-responsive">
+  
+<img src="imagens/trilhas/trilha10.jpg" class="img-responsive">
+<img src="imagens/trilhas/trilha11.jpg" class="img-responsive">
+<img src="imagens/trilhas/trilha12.jpg" class="img-responsive">
+  <img src="imagens/trilhas/trilha13.jpg" class="img-responsive">
+  <img src="imagens/trilhas/trilha14.jpg" class="img-responsive">
+  <img src="imagens/trilhas/trilha14.jpg" class="img-responsive">
+  
 
-          <div class="item">
-            Palmeiras centenárias
-            <img src="imagens/trilhas/trilha13.jpg">
-          </div>
-            <div class="item">
-            Pedra do Totem ou "Guardião".
-            <img src="imagens/trilhas/trilha14.jpg">
-          </div>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+  $("img").click(function(){
+  var t = $(this).attr("src");
+  $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+  $("#myModal").modal();
+});
+
+$("video").click(function(){
+  var v = $("video > source");
+  var t = v.attr("src");
+  $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+  $("#myModal").modal();  
+});
+});//EOF Document.ready
+</script>
+
         </article>
     </main>
     <section class="rodape">

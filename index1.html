@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EITA</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='styleeita.css'>
+
+    <style>
+
+@font-face {
+    font-family: 'AdiHaus';
+    src: url('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    border-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+  
+:root {
+    --theme-color-black: #333333; /* rgba(51, 51, 51, 1) */
+    --theme-color-brown: #423A3A; 
+    --theme-color-blue: #2759e1;
+    --theme-color-white: #FEFFFF; /* rgba(254, 255, 255, 1) */
+}
+  
+/* ---------- MAIN BODY DECLERATIONS ---------- */
+
+html, body {
+    background-color: var(--theme-color-white);
+    font-family: "AdiHaus";
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    font-family: 'AdiHaus';
+}
+
+.mobile-container {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.hero-image-desktop {
+    display: none;
+}
+
+/* ---------- HERO BANNER DECLERATIONS ---------- */
+.hero-banner {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner .logo-wrapper {
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem 0;
+    width: auto;
+}
+    
+    .logo-wrapper img {
+        display: block;
+        height: 2.5rem;
+        margin: 0 auto;
+        width: auto;
+    }
+
+.hero-banner .hero-image {
+    background-image: url(imagens/eita3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 376px;
+    width: 100%;
+}
+
+/* ---------- TEXT INFO DECLERATIONS ---------- */
+.text-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+    .text-info > * {
+        padding-bottom: 0px;
+    }
+
+    /* intended for the first h2 within .text-info */
+    .text-info h2:nth-child(1) {
+        margin: left;
+        color: var(--theme-color-blue);
+        font-weight: normal;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+
+    .text-info h2 {
+        
+        margin:auto;
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: var(--theme-color-blue);
+        letter-spacing: 0px;
+        text-transform: uppercase;
+       
+        line-height: 80px;
+    }
+
+    .text-info p {
+        color: var(--theme-color-black);
+        line-height: 24px;
+    }
+
+    .text-info .email-signup {
+        margin: 1rem 0 6rem;
+        position: relative;
+        width: 100%;
+    }
+    
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-image: url(https://assets.codepen.io/6060109/destop-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 3.5rem;
+    }
+
+    .mobile-container {
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero-banner .logo-wrapper {
+        margin-left: 3.5rem;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+        .logo-wrapper img {
+            margin: 0 0 0;
+            padding-left: 2.5rem;
+        }
+
+    .hero-image {
+        display: none;
+    }
+
+    .text-info {
+        text-align: left;
+        align-items: start;
+    }
+    
+        .text-info h2 {
+            font-size: 4.5rem;
+        }
+
+        .text-info p {
+            font-size: 16px;
+        }
+
+       
+
+    .hero-image-desktop {
+        display: block;
+        height: 100%;
+        width: 55vw;
+    }
+
+    .hero-image-desktop img {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 216px;
+  height: 56px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.-btn:hover {
+  opacity: .8;
+}
+
+.-bg {
+  background: #1c449b;
+  display:flex;
+  margin:auto;
+}
+
+.-txt {
+  font-family: 'caviar';
+  color: #fff;
+  font-size: 30px;
+}
+
+.-xs {
+  font-size: 12px;
+}
+
+    </style>
+
+    </head>
+
+    <body>
+    
+
+    <div class="mobile-container">
+        <header>
+          <section class="hero-banner">
+            <div class="logo-wrapper">
+              <img src="imagens/arvore.png" alt="Adidas logo.">
+            </div>
+            <div class="hero-image"></div>
+          </section>
+        </header>
+        <main>
+          <article class="text-info">
+            <img src="imagens/logopmm.png">
+            <h2>A EITA</h2>
+            <br>
+            <h2>VOLTOU!</h2>
+            <br>
+            <p>A Estação de Inovações em Tecnologias Ambientais e Sociais é um equipamento da Secretaria de Educação de Maranguape. 
+                Tem sua sede no bairro do Parque Santa Fé e está instalada no Parque Municipal Sobreira de Amorim.</p>
+            <br>
+            <a href="index.html" class="-btn -bg -txt">
+                Conheça
+              </a>
+
+              <footer>
+                <p><h3 style="color:white">&copy; 2022 Lauriston Trindade</h3></p>
+                
+            </footer>
+         
+          </article>
+         
+        </main>
+              
+      
+      </div>
+      <div class="hero-image-desktop">
+        <img src="imagens/eita3.jpg" alt="Sede da EITA">
+      </div>
+
+
+
+
+</body>
+</html>
