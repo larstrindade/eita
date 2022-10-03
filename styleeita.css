@@ -454,6 +454,8 @@ figure img:hover {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
+    margin:auto;
+    padding-left:35px;
   }
 
   .text-sub {
