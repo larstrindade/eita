@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+#map { 
+            min-width: 380px;
+            max-width: 500px;
+            height: 400px; 
+            margin:auto;
+            margin-bottom:50px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="map"></div>
+    <script>
+        var map = L.map('map').setView([-3.901413, -38.688079], 13);
+        var marker = L.marker([-3.901413, -38.688079]).addTo(map);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
+
+        var polygon = L.polygon([
+        [-3.900047, -38.68806],
+        [-3.900996, -38.689102],
+        [-3.902529, -38.690644],
+        [-3.904044, -38.688506],
+        [-3.902308, -38.687619],
+        [-3.902341, -38.687259],
+        [-3.901701, -38.687011],
+        [-3.901713, -38.686797],
+        [-3.900223, -38.686735],
+    ]).addTo(map);
+
+    marker.bindPopup("<b>Sede da EITA</b><br>Rua Agostinho Fernandes , 1380.").openPopup();
+
+    var popup = L.popup();
+
+function onMapClick(e) {
+popup
+    .setLatLng(e.latlng)
+    .setContent("A posição do click é: " + e.latlng.toString())
+    .openOn(map);
+}
+
+map.on('click', onMapClick);
+
+
+    </script>
+</body>
+</html>
