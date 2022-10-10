@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -408,4 +409,416 @@ li a:hover, .dropdown:hover .dropbtn {
         
     </footer>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácia Viva</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='styleeita.css'>
+    <style>
+
+
+body {
+            background-image: linear-gradient(to right, #fff, #b3fdb0, #fff );
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment:scroll;
+            background-size:960px 260px;
+        }
+
+    
+li a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(120, 186, 244);
+          }
+
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3e9d46;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+
+          .dropdown-content a:hover {background-color: #62bb6b;}
+    
+
+          
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 660px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!--
+        <h1  class="eita">EITA</h1>
+        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3>-->
+        
+        <h1  class="eita">EITA</h1>
+        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3> 
+
+        <nav>
+  
+            <ul id="menu"> <!-- Inicia o menu principal --> 
+                <li><a href="index.html">Início</a> <!-- Item normal do menu --> 
+                <li><a href="#" class="drop">Projetos</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                    <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                        <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                            <span>Atuação</span> <!-- Título da coluna -->
+                            <li><a href="joia.html" target="_self">Economia Criativa</a></li>
+                            <li><a href="farmacia.html" target="_self">Farmácia Viva</a></li>
+                            <li><a href="horta.html" target="_self">Hortas Didáticas</a></li>
+                            <li><a href="nascentes.html" target="_self">Nascentes</a></li>
+                            <li><a href="trilhas.html" target="_self">Trilhas</a></li>
+                        </ul> <!-- fecha o box de uma das 3 colunas com os links -->
+
+                <li><a href="#" class="drop">Galeria</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                    <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                        <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                            <span>Fotografias</span> <!-- Título da coluna -->
+                            <li><a href="galeriafarmacia.html" target="_self">Farmácia Viva</a></li>
+                            <li><a href="galeriahorta.html" target="_self">Hortas</a></li>
+                            <li><a href="galeriatrilhas.html" target="_self">Serra de Maranguape</a></li>
+                            <li><a href="galeriaaratanha.html" target="_self">Serra da Aratanha</a></li>
+                            <li><a href="galeriatrilhas.html" target="_self">Trilhas</a></li>
+                        </ul> <!-- fecha o box de uma das 3 colunas com os links -->        
+                        
+
+                <li><a href="#" class="drop">Sobre</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                    <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                        <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                            <span>Suporte</span> <!-- Título da coluna -->
+                            <li><a href="equipe.html" target="_self">Nossa Equipe</a></li>
+                            <li><a href="sede.html" target="_self">Espaço Físico</a></li>
+                            <li><a href="teia.html" target="_self">Espaço Conceitual</a></li>
+                           
+                        </ul> <!-- fecha o box de uma das 3 colunas com os links -->   
+                                
+
+                    </div> <!-- Fecha o box que conterá o conteúdo do dropdown -->
+                </li> <!-- Fecha item dropdown do menu -->
+            </ul> <!-- Fecha o menu principal --> 
+            </nav>
+        
+    </header>
+    <main>
+  
+
+    <article>
+        <BR>
+        <h2 class="titulo">Farmácia Viva</h2>
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+        
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+            <p class="highcharts-description">
+                
+            </p>
+        </figure>
+        
+        <script>
+        
+            Highcharts.chart('container', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Dimensões - Farmácia Viva'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        accessibility: {
+            point: {
+                valueSuffix: '%'
+            }
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: false
+                },
+                showInLegend: true
+            }
+        },
+        series: [{
+            name: 'Foco:',
+            colorByPoint: true,
+            data: [{
+                name: 'Educação',
+                y: 40,
+                sliced: true,
+                selected: true
+            },  {
+                name: 'Pesquisa',
+                y: 25
+            },  {
+                name: 'Empreendedorismo',
+                y: 10
+            }, {
+                name: 'Extensão',
+                y: 25
+            }]
+        }]
+        });
+        
+        </script>
+
+        <div class="direita">
+        <img src="imagens/almofariz.png" alt="imagem com símbolo da reciclagem">
+        </div>
+        <p class="intro">As Farmácias Vivas foram criadas nos anos de 1980 pelo professor Dr. Francisco José de Abreu Matos como um projeto da Universidade Federal do Ceará - UFC, a fim de promover assistência social farmacêutica às comunidades, de acordo com as recomendações da Organização Mundial da Saúde - OMS.
+            </p>
+        <p>
+            O professor Matos percorreu o interior do Ceará e do Nordeste coletando espécies vegetais e informações da sabedoria popular, iniciando assim, um extenso trabalho de pesquisa etnobotânica, etnofarmacológica, taxonômica, bibliográfica e experimental (ensaios químicos e toxicológicos). Houve uma seleção original de centenas de espécies vegetais para compor o elenco de plantas das Farmácias Vivas. Os critérios priorizados foram: potencial de eficácia terapêutica e segurança de uso.
+        </p>
+        <p>
+            Hoje, as Farmácias Vivas exercem um forte elo entre os profissionais da saúde, do meio ambiente, educadores e comunidades, melhorando o acesso da população às plantas terapêuticas in natura, droga vegetal e fitoterápicos
+            padronizados, a depender da finalidade do projeto.
+        </p>
+        <p>
+            O Ministério da Saúde aprovou em maio/2006 a Política
+            Nacional de Práticas Integrativas
+            e Complementares (PNPIC) no
+            Sistema Único de Saúde (SUS), que estabelece as linhas de ação
+            prioritárias para o uso adequado de plantas terapêuticas
+            e fitoterápicos (remédios oriundos de plantas). 
+        </p>
+        <p>A ideia é que se construa no Brasil uma rede de esforços
+            para o desenvolvimento de medidas voltadas à melhoria da
+            atenção à saúde, ao fortalecimento da agricultura familiar,
+            à geração de emprego e renda, à inclusão social e ao desenvolvimento industrial e tecnológico.
+        </p>
+        <hr>
+    <h2>Vantagens</h2>
+   
+    <p>
+            <ul>
+                <li>Fácil acesso (hortas comunitárias);</li>
+                <li>Resultados comprovados;</li>
+                <li>Baixo custo financeiro;</li>
+                <li>Menos efeitos colaterais;</li>
+                <li>Facilidade de preparo dos fitoterápicos;</li>
+                <li>Valorização da cultura popular;</li>
+                <li>Contorno ao atual Sistema de Saúde;</li>
+                <li>Desenvolvimento de uma farmacologia natural, científica, ética e responsável.</li>
+            </ul><br>
+            
+    </p>
+    <hr>
+   
+    <h2>Propósitos</h2>
+    <div class="direita">
+        <img src="imagens/fitoterapia.png" alt="Imagem de um comprimido fitoterápico">
+        </div>
+    <p>Promover a Educação Ambiental e em Saúde para
+        profissionais de saúde, meio ambiente, educação - áreas afins,
+        e comunidades, visando a garantia de acesso às plantas
+        terapêuticas com segurança e manejo sustentável dos recursos
+        ambientais e de saúde. Visa ainda, auxiliar na implantação e
+        implementação de ações e serviços com base na Política
+        Nacional de Práticas Integrativas e Complementares (Portaria
+        MS/GM nº 971/06), na Política Nacional de Plantas Medicinais e
+        Fitoterápicos (Decreto Federal n° 5.813/06) e no Programa
+        Nacional de Plantas Medicinais e Fitoterápicos (Portaria
+        interministerial MS/GM nº 2.960/08).  
+    </p>
+    <p>É necessário considerar as boas práticas agrícolas e valorizar os aspectos agronômicos, ambientais e sanitários, utilizar
+        matrizes certificadas com identidade botânica da espécie a ser cultivada, verificar a qualidade da água e do solo, tomar os devidos
+        cuidados no cultivo, colheita, secagem, armazenamento, transporte, entre outros fatores importantes, para obter uma melhor
+        qualidade e eficiência das plantas cultivadas. </p>
+    <hr>
+    <h2>Passos</h2>
+    <div class="direita">
+        <img src="imagens/remedio.png" alt="imagem com símbolo da reciclagem">
+        </div>
+        <p>
+            <ul type="none">
+                <li><strong>Passo 1: diagnóstico.</strong></li>
+                    <ul>
+                        <li>Determinar o perfil da comunidade sobre o uso das plantas medicinais. Importante papel dos Agentes comunitários de Saúde.</li>
+                        <ul>
+                            <li>Diagnóstico</li>
+                            <ul>
+                                <li>Elenco das plantas utilizadas pela comunidade</li>
+                                <li>Grau de conhecimentos de usuários</li>
+                                <li>Mapeamento dos pontos a serem trabalhados nas atividades educativas.</li><br>
+                            </ul>
+                        </ul>
+                    </ul>
+                <li><strong>Passo 2: matéria-prima.</strong></li>
+                    <ul>
+                            <li>Horto didático:  matrizes a partir do Núcleo Fitoterápico do Estado do Ceará.</li>
+                            <li>Hortos comunitários: EITA / SEAGRI / Escolas do município;</li>
+                            <li>Arranjos produtivos locais;</li>
+                            
+                    </ul>
+                <li type="circle">Determinação de elenco</li>
+                    <ul>
+                        <li>Plantas da lista do NUFITO;</li>
+                        <li>Facilidade de cultivo e manejo;</li>
+                        <li>Disponibilidade de material científico;</li>
+                    </ul>
+                    
+                <li>Objetivos principais:</li>
+                        <ul>
+                            <li>Ser referência para o município: fornecimento de mudas certificadas;</li>
+                            <li>Registros oficiais;</li>
+                            <li>Definição do grupo de profissionais;</li>
+                            <li>Cadastro para fornecedores de insumos;</li>
+                            <li>Produção dos próprios insumos;</li>
+                            <li>Capacitações externas: SENAR, NUFITO... E internas: Secretaria de Saúde, Secretaria de Educação...</li>
+                        </ul>
+                    <li>Espectro de capacitações:</li>
+                        <ul>
+                            <li>Iniciação em farmácia viva (ACS e prescritores);</li>
+                            <li>Cultivo orgânico;</li>
+                            <li>Plantas medicinais;</li>
+                            <li>Cultivo protegido;</li>
+                            <li>Montagem de desidratadora aretesanal;</li><br>
+                                
+                        </ul>
+                <li><strong>Passo 3: acesso.</strong></li>
+                        <ul>
+                            <li>Cadastro no programa (formações);</li>
+                            <li>Plantas frecas/mudas: hortas, unidades básicas de saúde, EITA...</li>
+                            <li>Droga vegetal e produtos manipulados;</li>
+                            <li>Livre demanda;</li>
+                            <li>Prescrição;</li>
+                            </ul>
+                
+                <li>Passo 4: atividades educacionais.</li>
+                <ul>
+                    <li>Estimular a especialização de profissionais;</li>
+                    <li>Capacitações em nível municipal;</li>
+                    <li>Formação de grupos de estudos;</li>
+                    <li>Capacitação de prescritores;</li>
+                    <li>Atividades educativas para a comunidade;</li>
+                    </ul>
+            </ul>
+        </p>  
+        <hr>
+        <h2>Tipos</h2>
+        <div class="direita">
+            <img src="imagens/niveis.png" alt="imagem com símbolo da reciclagem">
+            </div>
+        <p><strong>Farmácia Viva tipo I</strong></p>
+        <p>
+            <ul>
+                <li>Cadastro  e implementação das formações;</li>
+                <li>Fornecimento de mudas certificadas.</li>
+            </ul>
+        </p>
+
+        <p><strong>Farmácia Viva tipo II</strong></p>
+        <p>
+            <ul>
+                <li>Qualidade da matéria-prima;</li>
+                <li>Instalações da Farmácia Viva;</li>
+                <li>Especificações de secagem e armazenamento;</li>
+                <li>Controle de Qualidade</li>
+
+            </ul>
+        </p>
+       
+        <p><strong>Farmácia Viva tipo III</strong></p>
+        <p>
+            <ul>
+                <li>Produção de fitoterápicos;</li>
+                <li>Distribuição de fitoterápicos nos locais previamente credenciados.</li>
+            </ul>
+        </p>
+        <hr>
+        </article>
+        <section class="rodape">
+            <h4>Parceiros:</h4><br>
+            <div class="row">
+               
+               
+                <div class="coluna">
+                    <img src="imagens/mpe.png" alt="logo do governo do estado do Ceará" style="width:100%">
+                </div>
+                <div class="coluna">
+                  <img src="imagens/if.png" alt="logo do ifce" style="width:100%">
+                </div>
+                <div class="coluna">
+                  <img src="imagens/ufc.png" alt="logo da Universidade Federal do Ceará" style="width:100%">
+                </div>
+                <div class="coluna">
+                    <img src="imagens/uece.png" alt="logo da Universidade Estadual do Ceará" style="width:100%">
+                </div>
+                <div class="coluna">
+                    <img src="imagens/cvt.png" alt="logo do CVT Maranguape" style="width:100%">
+                  </div>
+                  <div class="coluna">
+                    <img src="imagens/ce6.png" alt="logo do governo do estado do Ceará" style="width:100%">
+                  </div>
+                  
+        </section>
+
+        
+
+    </main>
+    <footer>
+        <p><h3 style="color:white">&copy; 2022 Lauriston Trindade</h3></p>
+        
+    </footer>
+</body>
+>>>>>>> 7325420eae921d2b40570fd108287f07c3f834cd
 </html>

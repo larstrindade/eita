@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -639,4 +640,647 @@ body {
 
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EITA</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='styleeita.css'>
+    <style>
+
+
+body {
+            background-image: linear-gradient(to right, #fff, #399ff3, #fff );
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment:scroll;
+            background-size:960px 260px;
+        }
+
+        
+        header > h1 {
+            color:rgb(28, 25, 80);
+        }
+        h2 {
+            color:rgb(28, 25, 80);
+        }
+
+        .titulo {
+            color:hsl(289, 87%, 19%);
+        }
+   
+         
+.arvore {
+  display: block;
+  
+  margin-left: auto;
+  margin-right: auto;
+  width:50%;
+}
+
+       
+        canvas {
+            display: block;
+            margin: auto;
+            object-fit: contain;
+            max-width: 300px;
+            max-height: 300px;
+        }
+        
+        /* Dark theme */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: hsl(223,10%,10%);
+            }
+        }
+    </style>
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <!--
+        <h1  class="eita">EITA</h1>
+        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3>
+        
+        <nav>
+  
+            <div class="nav">
+              
+            <ul>
+              <li><a href="#">Início</a></li>
+            
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Atuação</a>
+                <div class="dropdown-content">
+                  <a href="joia.html">Alfaiataria Social</a>
+                  <a href="escola.html">Escola</a>
+                  <a href="farmacia.html">Farmácia viva</a>
+                  <a href="horta.html">Hortas didáticas</a>
+                  <a href="nascentes.html">Nascentes</a>
+                  <a href="trilhas.html">Trilhas</a>
+                </div>
+              </li>
+            
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Galeria</a>
+                <div class="dropdown-content">
+                  <a href="galeriafarmacia.html">Farmácia viva</a>
+                  <a href="galeriahorta.html">Hortas</a>
+                  <a href="galeriatrilhas.html">Trilhas</a>
+                  <a href="galeriaaratanha.html">Aratanha</a>
+                </div>
+              </li>
+            
+              <li class="dropdown">
+                <a href="#" class="dropbtn">Sobre</a>
+                <div class="dropdown-content">
+                  <a href="equipe.html">Nossa equipe</a>
+                  <a href="sede.html">Espaço Físico</a>
+                  <a href="teia.html">Espaço conceitual</a>
+                </div>
+              </li>
+            
+              
+            
+                    </ul>
+                 
+            </div>
+            </nav> -->
+
+       
+            <h1  class="eita">EITA</h1>
+            <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3> 
+
+        <nav>
+  
+            <ul id="menu"> <!-- Inicia o menu principal --> 
+                <li><a href="#">Início</a> <!-- Item normal do menu --> 
+                <li><a href="#" class="drop">Projetos</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                    <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                        <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                            <span>Atuação</span> <!-- Título da coluna -->
+                            <li><a href="joia.html" target="_self">Economia Criativa</a></li>
+                            <li><a href="farmacia.html" target="_self">Farmácia Viva</a></li>
+                            <li><a href="horta.html" target="_self">Hortas Didáticas</a></li>
+                            <li><a href="nascentes.html" target="_self">Nascentes</a></li>
+                            <li><a href="trilhas.html" target="_self">Trilhas</a></li>
+                        </ul> <!-- fecha o box de uma das 3 colunas com os links -->
+
+                <li><a href="#" class="drop">Galeria</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                    <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                        <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                            <span>Fotografias</span> <!-- Título da coluna -->
+                            <li><a href="galeriafarmacia.html" target="_self">Farmácia Viva</a></li>
+                            <li><a href="galeriahorta.html" target="_self">Hortas</a></li>
+                            <li><a href="galeriatrilhas.html" target="_self">Serra de Maranguape</a></li>
+                            <li><a href="galeriaaratanha.html" target="_self">Serra da Aratanha</a></li>
+                            <li><a href="galeriatrilhas.html" target="_self">Trilhas</a></li>
+                        </ul> <!-- fecha o box de uma das 3 colunas com os links -->        
+                        
+
+                <li><a href="#" class="drop">Sobre</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                    <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                        <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                            <span>Suporte</span> <!-- Título da coluna -->
+                            <li><a href="equipe.html" target="_self">Nossa Equipe</a></li>
+                            <li><a href="sede.html" target="_self">Espaço Físico</a></li>
+                            <li><a href="teia.html" target="_self">Espaço Conceitual</a></li>
+                           
+                        </ul> <!-- fecha o box de uma das 3 colunas com os links -->   
+                                
+
+                    </div> <!-- Fecha o box que conterá o conteúdo do dropdown -->
+                </li> <!-- Fecha item dropdown do menu -->
+            </ul> <!-- Fecha o menu principal --> 
+            </nav>
+        
+    </header>
+    <main>
+  
+
+    <article>
+        <br>
+        <h2 class="titulo">Árvore de saberes</h2>
+       
+        <canvas role="img" alt="A tree growing until it bears fruit, dropping its fruit, shrinking, and repeating the cycle"></canvas>
+
+        <script>
+            window.addEventListener("DOMContentLoaded",() => {
+        const t = new Tree("canvas");
+    });
+    
+    class Tree {
+        constructor(qs) {
+            this.C = document.querySelector(qs);
+            this.c = this.C?.getContext("2d");
+            this.S = window.devicePixelRatio;
+            this.W = 800;
+            this.H = 800;
+            this.branches = [];
+            this.darkTheme = false;
+            this.debug = false;
+            this.decaying = false;
+            this.floorY = 690;
+            this.fruit = [];
+            this.gravity = 0.098;
+            this.loopDelay = 1000;
+            this.loopEnd = Utils.dateValue;
+            this.maxGenerations = 10;
+    
+            if (this.C) this.init();
+        }
+        get allBranchesComplete() {
+            const { branches, maxGenerations } = this;
+    
+            return branches.filter(b => {
+                const isLastGen = b.generation === maxGenerations;
+                return b.progress >= 1 && isLastGen;
+            }).length > 0;
+        }
+        get allFruitComplete() {
+            return !!this.fruit.length && this.fruit.every(f => f.progress === 1);
+        }
+        get allFruitFalling() {
+            return !!this.fruit.length && this.fruit.every(f => f.timeUntilFall <= 0);
+        }
+        get debugInfo() {
+            return [
+                { item: 'Pixel Ratio', value: this.S },
+                { item: 'Branches', value: this.branches.length },
+                { item: 'Branches Complete', value: this.allBranchesComplete },
+                { item: 'Decaying', value: this.decaying },
+                { item: 'Fruit', value: this.fruit.length },
+                { item: 'Fruit Complete', value: this.allFruitComplete }
+            ];
+        }
+        get lastGeneration() {
+            const genIntegers = this.branches.map(b => b.generation);
+            return [...new Set(genIntegers)].pop();
+        }
+        get trunk() {
+            return {
+                angle: 0,
+                angleInc: 20,
+                decaySpeed: 0.0225,
+                diameter: 10,
+                distance: 120,
+                distanceFade: 0.2,
+                generation: 1,
+                growthSpeed: 0.02,
+                hadBranches: false,
+                progress: 0,
+                x1: 400,
+                y1: 680,
+                x2: 400,
+                y2: 560
+            };
+        }
+        detectTheme(mq) {
+            this.darkTheme = mq.matches;
+        }
+        draw() {
+            const { c, W, H, debug, branches, fruit } = this;
+    
+            c.clearRect(0,0,W,H);
+    
+            const lightness = this.darkTheme ? 90 : 10;
+            const foreground = `#002200`;
+            c.fillStyle = foreground;
+            c.strokeStyle = foreground;
+    
+            // debug info
+            if (debug === true) {
+                const textX = 24;
+    
+                this.debugInfo.forEach((d,i) => {
+                    c.fillText(`${d.item}: ${d.value}`,textX,24 * (i + 1));
+                });
+            }
+    
+            // branches
+            branches.forEach(b => {
+                c.lineWidth = b.diameter;
+                c.beginPath();
+                c.moveTo(b.x1,b.y1);
+                c.lineTo(
+                    b.x1 + (b.x2 - b.x1) * b.progress,
+                    b.y1 + (b.y2 - b.y1) * b.progress
+                );
+                c.stroke();
+                c.closePath();
+            });
+    
+            // fruit
+            fruit.forEach(f => {
+                c.globalAlpha = f.decayTime	< f.decayFrames ? f.decayTime / f.decayFrames : 1;
+                c.beginPath();
+                c.arc(f.x,f.y,f.r * f.progress,0,2 * Math.PI);
+                c.fill();
+                c.closePath();
+                c.globalAlpha = 1;
+            });
+        }
+        grow() {
+            // start with the trunk
+            if (!this.branches.length && Utils.dateValue - this.loopEnd > this.loopDelay) {
+                this.branches.push(this.trunk);
+            }
+    
+            if (!this.allBranchesComplete) {
+                this.branches.forEach(b => {
+                    if (b.progress < 1) {
+                        // branch growth
+                        b.progress += b.growthSpeed;
+    
+                        if (b.progress > 1) {
+                            b.progress = 1;
+    
+                            // grow fruit if the generation is the last
+                            if (b.generation === this.maxGenerations) {
+                                this.fruit.push({
+                                    decayFrames: 18,
+                                    decayTime: 150,
+                                    progress: 0,
+                                    speed: 0.04,
+                                    timeUntilFall: Utils.randomInt(0,300),
+                                    x: b.x2,
+                                    y: b.y2,
+                                    r: Utils.randomInt(4,6),
+                                    restitution: 0.2 * (1 - b.y2 / this.floorY),
+                                    yVelocity: 0
+                                });
+                            }
+                        }
+    
+                    } else if (!b.hadBranches && b.generation < this.maxGenerations) {
+                        b.hadBranches = true;
+                        // create two new branches
+                        const lean = 5;
+                        const angleLeft = b.angle - (b.angleInc + Utils.randomInt(-lean,lean));
+                        const angleRight = b.angle + (b.angleInc + Utils.randomInt(-lean,lean));
+                        const distance = b.distance * (1 - b.distanceFade);
+                        const generation = b.generation + 1;
+    
+                        const leftBranch = {
+                            angle: angleLeft,
+                            angleInc: b.angleInc,
+                            decaySpeed: b.decaySpeed,
+                            diameter: Math.floor(b.diameter * 0.9),
+                            distance,
+                            distanceFade: b.distanceFade,
+                            generation,
+                            growthSpeed: b.growthSpeed,
+                            hadBranches: false,
+                            progress: 0,
+                            x1: b.x2,
+                            y1: b.y2,
+                            x2: b.x2 + Utils.endPointX(angleLeft,distance),
+                            y2: b.y2 - Utils.endPointY(angleLeft,distance)
+                        };
+    
+                        const rightBranch = {...leftBranch};
+                        rightBranch.angle = angleRight;
+                        rightBranch.x2 = b.x2 + Utils.endPointX(angleRight,distance);
+                        rightBranch.y2 = b.y2 - Utils.endPointY(angleRight,distance);
+    
+                        this.branches.push(leftBranch,rightBranch);
+                    }
+                });
+            }
+            if (!this.allFruitComplete) {
+                this.fruit.forEach(f => {
+                    if (f.progress < 1) {
+                        f.progress += f.speed;
+    
+                        if (f.progress > 1) f.progress = 1;
+                    }
+                });
+            }
+    
+            if (this.allBranchesComplete && this.allFruitComplete) this.decaying = true;
+        }
+        decay() {
+            if (this.fruit.length) {
+                // fruit fall
+                this.fruit = this.fruit.filter(f => f.decayTime > 0);
+    
+                this.fruit.forEach(f => {
+                    if (f.timeUntilFall <= 0) {
+                        f.y += f.yVelocity;
+                        f.yVelocity += this.gravity;
+    
+                        const bottom = this.floorY - f.r;
+    
+                        if (f.y >= bottom) {
+                            f.y = bottom;
+                            f.yVelocity *= -f.restitution;
+                        }
+    
+                        --f.decayTime;
+    
+                    } else if (!f.decaying) {
+                        --f.timeUntilFall;
+                    }
+                });
+            }
+            if (this.allFruitFalling || !this.fruit.length) {
+                // branch decay
+                this.branches = this.branches.filter(b => b.progress > 0);
+    
+                this.branches.forEach(b => {
+                    if (b.generation === this.lastGeneration) b.progress -= b.decaySpeed;
+                });
+            }
+            if (!this.branches.length && !this.fruit.length) {
+                // back to the trunk
+                this.decaying = false;
+                this.loopEnd = Utils.dateValue;
+            }
+        }
+        init() {
+            this.setupCanvas();
+            this.setupThemeDetection();
+            this.run();
+        }
+        run() {
+            this.draw();
+    
+            if (this.decaying) this.decay();
+            else this.grow();
+    
+            requestAnimationFrame(this.run.bind(this));
+        }
+        setupCanvas() {
+            const { C, c, W, H, S } = this;
+    
+            // properly scale the canvas based on the pixel ratio
+            C.width = W * S;
+            C.height = H * S;
+            C.style.width = "auto";
+            C.style.height = "100%";
+            c.scale(S,S);
+    
+            // set unchanging styles
+            c.font = "16px sans-serif";
+            c.lineCap = "round";
+            c.lineJoin = "round";
+        }
+        setupThemeDetection() {
+            if (window.matchMedia) {
+                const mq = window.matchMedia("(prefers-color-scheme: dark)");
+                this.detectTheme(mq);
+                mq.addListener(this.detectTheme.bind(this));
+            }
+        }
+    }
+    
+    class Utils {
+        static get dateValue() {
+            return +new Date();
+        }
+        static endPointX(angleInDeg,distance) {
+            return Math.sin(angleInDeg * Math.PI / 180) * distance;
+        }
+        static endPointY(angleInDeg,distance) {
+            return Math.cos(angleInDeg * Math.PI / 180) * distance;
+        }
+        static randomInt(min,max) {
+            return min + Math.round(Math.random() * (max - min));
+        }
+    }
+        </script>
+        
+       
+        <p class="intro">
+        A <abbr title='Estação de Inovações e Tecnologias Ambientais e Sociais'>EITA</abbr> nasce dos anseios da gestão municipal em desenvolver um equipamento que possa ajudar a fortalecer o resgate educacional, histórico e ambiental de Maranguape. Dessa forma, propõe-se na consolidação de mais um espaço para a educação pública municipal. Busca também incentivar, sobretudo, uma perspectiva pedagógica contextualizada, bem como a gestão do meio ambiente, a pesquisa científica e o fomento de projetos tecnológicos ambientais e sociais.
+        </p>
+        <p>Analogamente, a EITA pode ser interpretada como uma grande árvore de saberes, onde seus múltiplos galhos possuem relação com as diversas áreas de conhecimentos contemplados em sua circunscrição.</p>
+        <p>Já os frutos dessa árvore, tem relação com os projetos engendrados em tais galhos.</p>
+        <p>Isso aproxima melhor a EITA da ideia que nós temos para um ente vivo, tornando suas raízes mais fortes e sua sombra cada vez mais acolhedora.</p>
+        <hr>
+    <h2>Diretrizes da EITA</h2>
+    <div class="direita">
+        <img src="imagens/guardachuva.png" alt="imagem com símbolo de guarda chuva">
+        </div>
+    <p>
+            <ul>
+                <li>A EITA constituída como Organização Social;</li>
+                <li>Seja um “Projeto Guarda Chuva” – contemplando diversos sub-projetos:  educacionais, socioambientais, incubadoras de projetos, parque para visitação e convênios com instituições diversas para o desenvolvimento de pesquisas; </li>
+                
+                   
+                <li>Estimular a incubação de
+                    iniciativas diversas e convênios com outras
+                    instituições públicas e privadas.</li>
+            </ul>
+            
+    </p>
+    <hr>
+   
+    <h2>Dimensões</h2>
+    <p>
+        <ul type="none">
+            <li><strong>Educação</strong></li>
+                <ul>
+                    <li>Educação contextualizada com foco em meio ambiente, inclusão e diversidade.</li>
+                </ul>
+            <li><strong>Pesquisa</strong></li>
+                <ul>
+                        <li>Núcleo de pesquisa, produção e desenvolvimento.</li>
+                </ul>
+            <li><strong>Empreendedorismo</strong></li>
+                <ul>
+                    <li>Incubadora de projetos sócio-ambientais;</li>
+                    <li>Inovação;</li>
+                    <li>Negócios verdes;</li>
+                </ul>
+            <li><strong>Extensão</strong></li>
+                <ul>
+                    <li>Núcleo de visitação;</li>
+                    <li>Resgate histórico</li>
+                    <li>Educação ambiental;</li>
+                    
+                </ul>
+        </ul>
+    </p>
+    <hr>
+
+    
+        <h2>Tecnologias Ambientais</h2>
+        <div class="esquerda">
+            <img src="imagens/fabrica.png" alt="imagem com símbolo da reciclagem">
+            </div>    
+        <p>Também chamada de <em>tecnologia sustentável</em> é resultado da aplicação de diversas ciências ambientais para o amparo do espaço natural e biodiversidade. Nos últimos em anos, a tecnologia ambiental ganhou uma nova força, no sentido de corresponder necessidades de desenvolvimento sustentável.</p>
+        <p>Suas aplicações se entrelaçam com vários ramos das ciências ambientais, desde o controle de poluição até o desenvolvimento de processos limpos.</p>
+        <p><strong>Tipos:</strong></p>
+        <p><strong>Mensuração ambiental:</strong></p>
+        <p>Ferramentas, instrumentos, equipamentos ou mesmo sistemas de medida, controle e gestão de informações ambientais. Visa oferecer dados suficientes para as tomadas de decisão sobre a qualidade de Meio Ambiente.</p>
+        <p><strong>Tecnologia de controle de poluição:</strong></p>
+        <p>Processos, técnicas e práticas desenvolvidas para mitigar impactos gerados durante práticas produtivas. Não existe aqui, obrigatoriedade de imposição de mudanças no processo produtivo original. É o controle do processo, não a mudança completa de paradigma.</p>
+        <p><strong>Tecnologias limpas:</strong></p>
+        <p>Eliminação ou diminuição dos aspectos prejudiciais dos processos produtivos sobre o Meio Ambiente. Requer uma perpsctiva holística.</p>  
+        <p><strong>Tecnologia de impacto nulo:</strong></p>
+        <p>Isenta da geração de impacto durante o desenvolvimento, implantação e utilização. Temos como máximo representante deste segmento, aplicações em Biotecnologia. Mas devemos tratar isso como caráter promissor. Na prática, ter um ciclo produtivo completo sem impactos ambientais é bastante improvável e utópico.</p>
+        <p><strong>Exemplos:</strong></p>
+       <ul>
+        <li>Arquiterura sustentável;</li>
+        <li>Eficiência energética;</li>
+        <li>Energias renováveis;</li>
+        <li>Mineração com tecnologias verdes;</li>
+        <li>Hidrogênio verde.</li>
+       </ul>
+           <hr>
+        <h2>Tecnologias Sociais</h2>
+        <div class="esquerda">
+            <img src="imagens/mundo.png" alt="imagem com símbolo da reciclagem">
+            </div>
+                <p>Todo produto, método, processo ou técnica com objetivo de produzir soluções para problemas sociais e que estejam em consonância com aspectos de simplicidade, aplicabilidade e reprodutibilidade, baixos custos e legítimo impacto social, será tratado como tecnologia social.</p>
+            <p>Tecnologia social é algo instrinsecamente inclusivo. isto porque as pessoas afetadas pelo problema tem que participar da gestação e implementação das soluções. Essa apropriação dos processos dá sustentação às soluções e amplia o empoderamento das comunidades sobre os aspectos sócio-ambientais que lhes competem.</p>
+            <p>As tecnologias ambientais devem ainda promover cidadania, educação multidimensional, acessibilidade, inclusão, sustentabilidade, resgate e manutenção das culturas tradicionais, além do incentivo à participação popular. Sendo um conjunto de iniciativas que promovem transformações sociais de base, as pessoas tem que ser parte da solução dos seus próprios problemas.</p>
+            <p>Por se tratar, muitas vezes, de processos de inovação, as tecnologias sociais precisam de ações nos âmbitos coletivos, com ênfase em fluxos participativos dos cidadãos. Todos os atores interessados no novo cenário devem se integrar e se engajar da melhor forma possível, observando-se as potencialidades de cada grupo. Tecnologias sociais e inovações sociais podem ser tratadas como estados de ressonância.</p>
+
+            <p><strong>Exemplos:</strong></p>
+            <ul>
+                <li>Água potável;</li>
+                <li>Alimentação;</li>
+                <li>Educação;</li>
+                <li>Energia;</li>
+                <li>Habitação;</li>
+                <li>Renda;</li>
+                <li>Saúde;</li>
+                <li>Meio Ambiente;</li>
+            </ul> 
+            <hr>
+
+            <h2>Tecnologia Apropriada</h2>
+            <div class="esquerda">
+                <img src="imagens/lotus.png" alt="imagem com símbolo da reciclagem">
+                </div>
+                <p>Surgida em meados do século XIX durante a descolonização da Índia. Foi a intensificação da popularização da fiação manual.</p>
+                <p>Produzir o próprio tecido seria uma das sementes para a difusão do pensamento popular para a independência econômica e política da Índia. </p>
+                <p>A natural consequência deste movimento seria o surgimento da oposição à cultura e produção comercial do ocidente. E neste processo, ao ressignificar a fiação e fortalecer a tradição, Gandhi (1869 - 1948) despertou a consciência política de milhares de hindus. Isso possibilitou o desenvolvimento do sentimento de independência política.</p>
+                <p>A roca de Gandhi se torna então objeto da <em>Tecnologia apropriada</em>.</p>
+                    <hr>
+
+    <h2>Espaços Ideia</h2>
+    <div class="direita">
+        <img src="imagens/terra.png" alt="imagem com símbolo da reciclagem">
+        </div>
+        <p><strong>ESPAÇO 1</strong> - Escola Municipal de Ensino Fundamental <em>(anos
+            finais)</em>, de Educação Integral (<em>mínimo 7 horas diárias</em>), com
+            currículo que trabalhe a Base Nacional Curricular
+            Comum - BNCC. Apoiada na educação contextualizada e atividades extracurriculares, com oferta de cursos e oficinas para a comunidade escolar.</p>
+        <p><strong>ESPAÇO 2</strong> - Núcleo de Pesquisa, Produção e
+            Desenvolvimento, que possa abraçar como principais
+            desafios: capacitação e domínio de toda a legislação
+            ambiental que oriente e determine práticas e intervenções
+            possíveis nos ecossistemas da região, conservação das fontes
+            naturais, qualidade da água, controla na geração de resíduos sólidos, nível de sustentabilidade das atividades econômicas das Serra de Maranguape, Aratanha e Lagedo, ecoturismo e produção de mudas de espécies nativas.</p><br>
+
+        <p><strong>Este Espaço abrange:</strong>
+            <ul>
+                <li>Centro Municipal de Formação em Educação Ambiental;</li>
+                <li>Célula do Núcleo Fitoterápico do estado do Ceará;</li>
+                <li>Célula do centro de implementação do Projeto Gestão Inteligente de Cidades</li>
+                <li>Célula de pesquisa (preferência para o desenvolvimento de pesquisas voltadas para as Serras do munic[ipio de Maranguape).</li>
+                <li>Sede da <abbr title="Área de Proteção Ambiental">APA</abbr> da Serra de Maranguape.</li>
+                <li>Sede da APA da Serra da Aratanha.</li>
+            </ul>
+        </p><br>
+        <div class="esquerda">
+            <img src="imagens/folha.png" alt="imagem com símbolo da reciclagem"></div> 
+        <p><strong>ESPAÇO 3</strong> - Núcleo de Visitação, Resgate Histórico e Educação Ambiental: com o intuito de fortalecer o
+            ecoturismo e a patrimonialidade existente em Maranguape.
+            Nesse aspecto, pretende-se fortalecer o turismo local a partir da preservação da natureza, oferecendo um espaço para
+            encontro das famílias, turismo ecológico, museu, auditório,
+            centro de convivência etc.
+        </p>
+        <p><strong>ESPAÇO 4</strong> - Coworking verde, pensado e vocacionado para odesenvolvimento de “negócios verdes" ou voltados para iniciativas que promovam a sustentabilidade. Nesse aspecto, precisa-se dotar o espaço de uma gestão direcionada para a avaliação de oportunidades e viabilidades de propostas e
+            projetos.</p>
+        <hr>
+
+        
+        </article>
+        <section class="rodape">
+            <h4>Parceiros:</h4><br>
+            <div class="row">
+               
+               
+                <div class="coluna">
+                    <img src="imagens/mpe.png" alt="logo do governo do estado do Ceará" style="width:100%">
+                </div>
+                <div class="coluna">
+                  <img src="imagens/if.png" alt="logo do ifce" style="width:100%">
+                </div>
+                <div class="coluna">
+                  <img src="imagens/ufc.png" alt="logo da Universidade Federal do Ceará" style="width:100%">
+                </div>
+                <div class="coluna">
+                    <img src="imagens/uece.png" alt="logo da Universidade Estadual do Ceará" style="width:100%">
+                </div>
+                <div class="coluna">
+                    <img src="imagens/cvt.png" alt="logo do CVT Maranguape" style="width:100%">
+                  </div>
+                  <div class="coluna">
+                    <img src="imagens/ce6.png" alt="logo do governo do estado do Ceará" style="width:100%">
+                  </div>
+                  
+        </section>
+
+        
+
+    </main>
+    <footer>
+        <p><h3 style="color:white">&copy; 2022 Lauriston Trindade</h3></p>
+        
+    </footer>
+
+
+</body>
+>>>>>>> 7325420eae921d2b40570fd108287f07c3f834cd
 </html>

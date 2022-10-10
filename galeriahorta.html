@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -181,4 +182,189 @@ $("video").click(function(){
       
     </footer> 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Horta</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href='styleeita.css'>
+
+    <style>
+    
+
+    body {
+            background-image: linear-gradient(to right, #fff, #d79bf7, #fff );
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment:scroll;
+            background-size:900px 260px;
+    }
+
+  
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <h1  class="eita">EITA</h1>
+        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3> 
+
+      
+       
+        <nav>
+  
+          <ul id="menu"> <!-- Inicia o menu principal --> 
+              <li><a href="index.html">Início</a> <!-- Item normal do menu --> 
+              <li><a href="#" class="drop">Projetos</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                  <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                      <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                          <span>Atuação</span> <!-- Título da coluna -->
+                          <li><a href="joia.html" target="_self">Economia Criativa</a></li>
+                          <li><a href="farmacia.html" target="_self">Farmácia Viva</a></li>
+                          <li><a href="horta.html" target="_self">Hortas Didáticas</a></li>
+                          <li><a href="nascentes.html" target="_self">Nascentes</a></li>
+                          <li><a href="trilhas.html" target="_self">Trilhas</a></li>
+                      </ul> <!-- fecha o box de uma das 3 colunas com os links -->
+
+              <li><a href="#" class="drop">Galeria</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                  <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                      <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                          <span>Fotografias</span> <!-- Título da coluna -->
+                          <li><a href="galeriafarmacia.html" target="_self">Farmácia Viva</a></li>
+                          <li><a href="#" target="_self">Hortas</a></li>
+                          <li><a href="galeriatrilhas.html" target="_self">Serra de Maranguape</a></li>
+                          <li><a href="galeriaaratanha.html" target="_self">Serra da Aratanha</a></li>
+                          <li><a href="galeriatrilhas.html" target="_self">Trilhas</a></li>
+                      </ul> <!-- fecha o box de uma das 3 colunas com os links -->        
+                      
+
+              <li><a href="#" class="drop">Sobre</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
+                  <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
+                      <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
+                          <span>Suporte</span> <!-- Título da coluna -->
+                          <li><a href="equipe.html" target="_self">Nossa Equipe</a></li>
+                          <li><a href="sede.html" target="_self">Espaço Físico</a></li>
+                          <li><a href="teia.html" target="_self">Espaço Conceitual</a></li>
+                         
+                      </ul> <!-- fecha o box de uma das 3 colunas com os links -->   
+                              
+
+                  </div> <!-- Fecha o box que conterá o conteúdo do dropdown -->
+              </li> <!-- Fecha item dropdown do menu -->
+          </ul> <!-- Fecha o menu principal --> 
+          </nav>
+        
+    </header>
+    <main>
+  <article>
+        <br>
+       
+        <h2 class="titulo">Galeria Horta</h2><br>
+<div id="gallery" class="container-fluid">  
+  <img src="imagens/horta/horta1.png" class="img-responsive">
+  <img src="imagens/horta/horta2.png" class="img-responsive">
+   <img src="imagens/horta/horta3.png" class="img-responsive">
+   <img src="imagens/horta/horta4.png" class="card img-responsive">
+   <img src="imagens/horta/horta5.png" class="img-responsive">
+  <img src="imagens/horta/horta6.png" class="img-responsive">
+  <img src="imagens/horta/horta7.png" class="img-responsive">
+<img src="imagens/horta/horta8.png" class="img-responsive">
+  
+<img src="imagens/horta/horta9.png" class="img-responsive">
+<img src="imagens/horta/horta10.png" class="img-responsive">
+<img src="imagens/horta/horta11.png" class="img-responsive">
+  <img src="imagens/horta/horta12.png" class="img-responsive">
+  <img src="imagens/horta/horta13.png" class="img-responsive">
+  <img src="imagens/horta/horta14.png" class="img-responsive">
+  <img src="imagens/horta/horta16.jpg" class="img-responsive">
+  <img src="imagens/horta/horta15.jpg" class="img-responsive">
+
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+  $("img").click(function(){
+  var t = $(this).attr("src");
+  $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+  $("#myModal").modal();
+});
+
+$("video").click(function(){
+  var v = $("video > source");
+  var t = v.attr("src");
+  $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+  $("#myModal").modal();  
+});
+});//EOF Document.ready
+</script>
+
+
+<!-- JavaScript -->
+<script language="JavaScript">
+  var d = new Date()
+  var h = d.getHours()
+  //
+  if (h < 6) document.write('<body background-image="lua.jpg" bgcolor="white">')
+  else if (h < 12) document.write('<body background-image="solfundo.png" bgcolor="white">')
+  else if (h < 18) document.write('<body background-image="solfundo.png" bgcolor="white">')
+  else if (h < 24) document.write('<body background-image="luafundo.png" bgcolor="white">')
+  </script>
+  
+
+
+        </article>
+        </main>
+        <section class="rodape">
+        <h4>Parceiros:</h4><br>
+        <div class="row">
+           
+           
+            <div class="coluna">
+                <img src="imagens/mpe.png" alt="logo do governo do estado do Ceará" style="width:100%">
+            </div>
+            <div class="coluna">
+              <img src="imagens/if.png" alt="logo do ifce" style="width:100%">
+            </div>
+            <div class="coluna">
+              <img src="imagens/ufc.png" alt="logo da Universidade Federal do Ceará" style="width:100%">
+            </div>
+            <div class="coluna">
+                <img src="imagens/uece.png" alt="logo da Universidade Estadual do Ceará" style="width:100%">
+            </div>
+            <div class="coluna">
+                <img src="imagens/cvt.png" alt="logo do CVT Maranguape" style="width:100%">
+              </div>
+              <div class="coluna">
+                <img src="imagens/ce6.png" alt="logo do governo do estado do Ceará" style="width:100%">
+              </div>
+              
+    </section>
+
+   
+
+    <footer>
+
+      <p><h3 style="color:white">&copy; 2022 Lauriston Trindade</h3></p>
+      
+    </footer> 
+</body>
+>>>>>>> 7325420eae921d2b40570fd108287f07c3f834cd
 </html>
