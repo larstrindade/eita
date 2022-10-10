@@ -13,10 +13,11 @@
     
 
     body {
-            background-image: url('imagens/trilha.jpg');
+            background-image: linear-gradient(to right, #fff, #53f37b, #fff );
             background-repeat: no-repeat;
             background-position: center top;
-            background-attachment: scroll;
+            background-attachment:scroll;
+            background-size:960px 260px;
         }
         header > h1 {
             
@@ -36,85 +37,19 @@
         }
        
 
-.masonry { /* Masonry container */
-    -webkit-column-count: 4;
-  -moz-column-count:4;
-  column-count: 4;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-   margin: 1.5em;
-    padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
-    font-size: .85em;
-}
-
-.item {
-    color:#500c71;
-    font-family: 'caviar';
-    font-weight: 600;
-    display: inline-block;
-    background: #fff;
-    padding: 1em;
-    margin: 0 0 1.5em;
-    width: 100%;
-    -webkit-transition: 1s ease all;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
-}
-
-.item img{max-width:100%;}
-
-@media only screen and (max-width: 320px) {
-    .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
-
-@media only screen and (min-width: 321px) and (max-width: 500px){
-    .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
-@media only screen and (min-width: 501px) and (max-width: 700px){
-    .masonry {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-@media only screen and (min-width: 701px) {
-    .masonry {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-}
   
     </style>
 </head>
 <body>
 
     <header>
-      <div class="text-box">
-        <h1>
-          <span class="text-primary">EITA</span>
-          <span class="text-sub">Estação de Inovações e Tecnologias Ambientais</span>
-        </h1>
-      </div>
-       
+      
+      <h1  class="eita">EITA</h1>
+      <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3> 
         <nav>
   
           <ul id="menu"> <!-- Inicia o menu principal --> 
-              <li><a href="index.htm">Início</a> <!-- Item normal do menu --> 
+              <li><a href="index.html">Início</a> <!-- Item normal do menu --> 
               <li><a href="#" class="drop">Projetos</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
                   <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
                       <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
@@ -157,60 +92,56 @@
     </header>
     <main>
   <article>
-
-        <h2 class="titulo">Galeria Aratanha</h2>
-        <div class="masonry">
-          <div class="item">
-            
-            <img src="imagens/aratanha/aratanha1.jpg">
-          </div>
-          <div class="item">
-            
-            <img src="imagens/aratanha/aratanha2.jpg">
-          </div>
-          
-          <div class="item">
-            
-            <img src="imagens/aratanha/aratanha4.jpg">
-          </div>
-          <div class="item">
-          
-            <img src="imagens/aratanha/aratanha5.jpg">
-          </div>
-          <div class="item">
-           
-            <img src="imagens/aratanha/aratanha6.jpg">
-          </div>
-          <div class="item">
-            
-            <img src="imagens/aratanha/aratanha7.jpg">
-          </div>
-          <div class="item">
-           
-            <img src="imagens/aratanha/aratanha8.jpg">
-          </div>
-          <div class="item">
-          
-            <img src="imagens/aratanha/aratanha9.jpg">
-          </div>
-          <div class="item">
-            
-            <img src="imagens/aratanha/aratanha10.jpg">
-          </div>
-          <div class="item">
+    <br>
+    <h2 class="titulo">Galeria Aratanha</h2><br>
+    <div id="gallery" class="container-fluid">  
+      <img src="imagens/aratanha/aratanha1.jpg" class="img-responsive">
+      <img src="imagens/aratanha/aratanha2.jpg" class="img-responsive">
+       <img src="imagens/aratanha/aratanha3.jpg" class="img-responsive">
+       <img src="imagens/aratanha/aratanha4.jpg" class="card img-responsive">
+       <img src="imagens/aratanha/aratanha5.jpg" class="img-responsive">
+      <img src="imagens/aratanha/aratanha6.jpg" class="img-responsive">
+      <img src="imagens/aratanha/aratanha7.jpg" class="img-responsive">
+    <img src="imagens/aratanha/aratanha8.jpg" class="img-responsive">
+      
+    <img src="imagens/aratanha/aratanha9.jpg" class="img-responsive">
+    <img src="imagens/aratanha/aratanha10.jpg" class="img-responsive">
+    <img src="imagens/aratanha/aratanha11.jpg" class="img-responsive">
+      <img src="imagens/aratanha/aratanha12.jpg" class="img-responsive">
+      <img src="imagens/aratanha/aratanha13.jpg" class="img-responsive">
+   
     
-            <img src="imagens/aratanha/aratanha11.jpg">
+    </div>
+    
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
           </div>
-
-          <div class="item">
-          
-            <img src="imagens/aratanha/aratanha12.jpg">
-          </div>
-
-          <div class="item">
-       
-            <img src="imagens/aratanha/aratanha13.jpg">
-          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <script>
+        $(document).ready(function(){
+      $("img").click(function(){
+      var t = $(this).attr("src");
+      $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+      $("#myModal").modal();
+    });
+    
+    $("video").click(function(){
+      var v = $("video > source");
+      var t = v.attr("src");
+      $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+      $("#myModal").modal();  
+    });
+    });//EOF Document.ready
+    </script>
+    
 
         </article>
         </main>
@@ -242,10 +173,9 @@
 
    
 
-
-<footer>
-    <p><h3 style="color:white">Desenvolvido por Lauriston Trindade&copy;</h3></p>
-   
+    <footer>
+      <p><h3 style="color:white">&copy; 2022 Lauriston Trindade</h3></p>
+      
   </footer>
 </body>
 </html>

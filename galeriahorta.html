@@ -12,110 +12,30 @@
     <style>
     
 
-body {
-            background-image: url('imagens/hortafundo.jpg');
+    body {
+            background-image: linear-gradient(to right, #fff, #d79bf7, #fff );
             background-repeat: no-repeat;
             background-position: center top;
-            background-attachment: scroll;
-            
-        }
- 
-      
-        header > h1 {
-            
-            color:#500c71;
-        }
-        .titulo {
-           color:#500c71;
-        }
-       
-
-       
-
-
-.masonry { /* Masonry container */
-    -webkit-column-count: 4;
-  -moz-column-count:4;
-  column-count: 4;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-   margin: 1.5em;
-    padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
-    font-size: .85em;
-}
-
-.item {
-    color:#500c71;
-    font-family: 'caviar';
-    font-weight: 600;
-    display: inline-block;
-    background: #fff;
-    padding: 1em;
-    margin: 0 0 1.5em;
-    width: 100%;
-    -webkit-transition: 1s ease all;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
-}
-
-.item img{max-width:100%;}
-
-@media only screen and (max-width: 320px) {
-    .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
+            background-attachment:scroll;
+            background-size:900px 260px;
     }
-}
 
-@media only screen and (min-width: 321px) and (max-width: 500px){
-    .masonry {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-}
-@media only screen and (min-width: 501px) and (max-width: 700px){
-    .masonry {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-@media only screen and (min-width: 701px) {
-    .masonry {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
-}
   
     </style>
 </head>
 <body>
 
     <header>
-        <!--
+        
         <h1  class="eita">EITA</h1>
-        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3> -->
+        <h3>Estação de Inovações em Tecnologias Ambientais e Sociais</h3> 
 
-        <div class="text-box">
-        <h1>
-          <span class="text-primary">EITA</span>
-          <span class="text-sub">Estação de Inovações e Tecnologias Ambientais</span>
-        </h1>
-      </div>
+      
        
         <nav>
   
           <ul id="menu"> <!-- Inicia o menu principal --> 
-              <li><a href="index.htm">Início</a> <!-- Item normal do menu --> 
+              <li><a href="index.html">Início</a> <!-- Item normal do menu --> 
               <li><a href="#" class="drop">Projetos</a> <!-- Item dropdown do menu, leva a class 'drop' para a adição da seta -->
                   <div class="columns"> <!-- Inicia o box que conterá o conteúdo do dropdown -->
                       <ul class="col"> <!-- Inicia o box de uma das 3 colunas com os links -->
@@ -159,57 +79,71 @@ body {
     <main>
   <article>
         <br>
-        <h2 class="titulo">Galeria Horta</h2>
-        <div class="masonry">
-          <div class="item">
-            Formação teórica
-            <img src="imagens/horta/horta2.png">
-          </div>
-          <div class="item">
-            Dinâmicas
-            <img src="imagens/horta/horta1.png">
-          </div>
-          <div class="item">
-            Encontro CEI Wilson Bastos
-            <img src="imagens/horta/horta7.png">
-          </div>
-          <div class="item">
-            Atividades CEM santa Rita
-            <img src="imagens/horta/horta9.png">
-          </div>
-          <div class="item">
-            Artesanias ecoeducativas
-            <img src="imagens/horta/horta3.png">
-          </div>
-          <div class="item">
-            Prática de irrigação
-            <img src="imagens/horta/horta4.png">
-          </div>
-          <div class="item">
-            Atividades inclusivas
-            <img src="imagens/horta/horta8.png">
-          </div>
-          <div class="item">
-            Aula Laboraório CVT
-            <img src="imagens/horta/horta10.png">
-          </div>
-          <div class="item">
-            Prática de irrigação
-            <img src="imagens/horta/horta16.jpg">
-          </div>
-          <div class="item">
-            Interatividade digital
-            <img src="imagens/horta/horta12.png">
-          </div>
-          <div class="item">
-            Montagem de composteira
-            <img src="imagens/horta/horta13.png">
-          </div>
+       
+        <h2 class="titulo">Galeria Horta</h2><br>
+<div id="gallery" class="container-fluid">  
+  <img src="imagens/horta/horta1.png" class="img-responsive">
+  <img src="imagens/horta/horta2.png" class="img-responsive">
+   <img src="imagens/horta/horta3.png" class="img-responsive">
+   <img src="imagens/horta/horta4.png" class="card img-responsive">
+   <img src="imagens/horta/horta5.png" class="img-responsive">
+  <img src="imagens/horta/horta6.png" class="img-responsive">
+  <img src="imagens/horta/horta7.png" class="img-responsive">
+<img src="imagens/horta/horta8.png" class="img-responsive">
+  
+<img src="imagens/horta/horta9.png" class="img-responsive">
+<img src="imagens/horta/horta10.png" class="img-responsive">
+<img src="imagens/horta/horta11.png" class="img-responsive">
+  <img src="imagens/horta/horta12.png" class="img-responsive">
+  <img src="imagens/horta/horta13.png" class="img-responsive">
+  <img src="imagens/horta/horta14.png" class="img-responsive">
+  <img src="imagens/horta/horta16.jpg" class="img-responsive">
+  <img src="imagens/horta/horta15.jpg" class="img-responsive">
 
-          <div class="item">
-            Micro aspersão
-            <img src="imagens/horta/horta15.jpg">
-          </div>
+</div>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+  $("img").click(function(){
+  var t = $(this).attr("src");
+  $(".modal-body").html("<img src='"+t+"' class='modal-img'>");
+  $("#myModal").modal();
+});
+
+$("video").click(function(){
+  var v = $("video > source");
+  var t = v.attr("src");
+  $(".modal-body").html("<video class='model-vid' controls><source src='"+t+"' type='video/mp4'></source></video>");
+  $("#myModal").modal();  
+});
+});//EOF Document.ready
+</script>
+
+
+<!-- JavaScript -->
+<script language="JavaScript">
+  var d = new Date()
+  var h = d.getHours()
+  //
+  if (h < 6) document.write('<body background-image="lua.jpg" bgcolor="white">')
+  else if (h < 12) document.write('<body background-image="solfundo.png" bgcolor="white">')
+  else if (h < 18) document.write('<body background-image="solfundo.png" bgcolor="white">')
+  else if (h < 24) document.write('<body background-image="luafundo.png" bgcolor="white">')
+  </script>
+  
+
 
         </article>
         </main>
@@ -242,7 +176,9 @@ body {
    
 
     <footer>
-      <h3 style="color:white">Desenvolvido por Lauriston Trindade 2022&copy;</h3>
+
+      <p><h3 style="color:white">&copy; 2022 Lauriston Trindade</h3></p>
+      
     </footer> 
 </body>
 </html>
